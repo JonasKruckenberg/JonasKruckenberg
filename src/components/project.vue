@@ -79,16 +79,17 @@ export default defineComponent({
   }
 }
 
-@media screen and (min-width: $breakpoint-m) {
+@media screen and (min-width: $breakpoint-s) {
   .card {
     grid-column: span 2;
-    grid-template-rows: 70% minmax(20%, max-content);
+    grid-template-rows: 60% minmax(20%, max-content);
   }
 }
 
 @media screen and (min-width: $breakpoint-l) {
   .card {
     grid-row: span 2;
+    grid-template-rows: 75% minmax(20%, max-content);
   }
 }
 

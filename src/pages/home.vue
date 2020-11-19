@@ -1,9 +1,9 @@
 <template>
   <div class="grid">
     <Brand style="grid-area: brand" />
-    <Card style="grid-area: featured">featured</Card>
-    <Navigation style="grid-area: nav" />
-    <Card style="grid-area: welcome">
+    <Card style="grid-area: featured; order: 1">featured</Card>
+    <Navigation style="grid-area: nav; order: 1" />
+    <Card style="grid-area: welcome; order: 1">
       <h1>
         Hi 👋 <br />
         I'm Jonas!
@@ -15,7 +15,7 @@
       <p>I also write about stuff that I find interesting.</p>
     </Card>
     <Project-Kolguyev />
-    <Card>
+    <!-- <Card>
       <h1 class="h0">foo bar</h1>
       <h1>foo bar</h1>
       <h2>foo bar</h2>
@@ -24,15 +24,13 @@
       <h5>foo bar</h5>
       <h6>foo bar</h6>
       <h6 class="h7">foo bar</h6>
-    </Card>
+    </Card> -->
   </div>
   <Footer></Footer>
 </template>
 
 <script lang="ts">
 import { ref, defineComponent, defineAsyncComponent } from "vue";
-// import Card from "../components/card.vue";
-import Brand from "../components/brand.vue";
 
 export default defineComponent({
   name: "Home",

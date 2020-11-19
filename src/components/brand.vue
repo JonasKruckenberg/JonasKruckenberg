@@ -1,5 +1,5 @@
 <template>
-  <Card style="grid-area: brand"></Card>
+  <Card id="brand"></Card>
 </template>
 
 <script lang="ts">
@@ -14,17 +14,19 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.card {
+@import "../assets/styles/variables.scss";
+#brand {
   background: url("../assets/profile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   grid-column: span 2;
   grid-row: span 2;
+  display: none;
 }
-@media (max-width: 640px) {
-  .card {
-    display: none;
+@media (min-width: $breakpoint-s) {
+  #brand {
+    display: unset;
   }
 }
 </style>
