@@ -1,0 +1,40 @@
+<template>
+  <div class="card">
+    <slot />
+  </div>
+</template>
+
+<script lang="ts">
+const colors = ["#fff", "#B29DD9", "#FDFD98", "#FE6B64", "#77DD77", "#779ECB"];
+
+export default {
+  computed: {
+    color() {
+      return colors[Math.round(Math.random() * (colors.length - 1))];
+    },
+  },
+};
+</script>
+<style lang="scss" scoped>
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 2em;
+  border-radius: 13px;
+  background-color: white;
+  box-shadow: 0 1.7px 6.1px rgba(#091419, 0.02),
+    0 5.6px 20.3px rgba(#091419, 0.03), 0 25px 91px rgba(#091419, 0.05);
+
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
