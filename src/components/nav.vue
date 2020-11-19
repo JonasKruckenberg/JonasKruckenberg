@@ -13,14 +13,13 @@
   </Card>
 </template>
 
-<script>
-import { defineAsyncComponent } from "vue";
+<script lang="ts">
+import { ref, defineComponent, defineAsyncComponent } from "vue";
 
-export default {
+export default defineComponent({
+  name: "Navigation",
   components: {
-    Card: defineAsyncComponent(() => import("../components/card.vue")),
+    Card: defineAsyncComponent(() => import("./card.vue")),
   },
-};
+});
 </script>
-
-<style lang="ts" scoped></style>

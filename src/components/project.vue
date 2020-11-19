@@ -10,11 +10,19 @@
   </Card>
 </template>
 
-<script>
-import { defineAsyncComponent, ref } from "vue";
+<script lang="ts">
+import {
+  ref,
+  defineComponent,
+  defineAsyncComponent,
+  App,
+  Component,
+} from "vue";
+// @ts-ignore
 import anime from "animejs/lib/anime.es.js";
 
-export default {
+export default defineComponent({
+  name: "Project",
   components: {
     Card: defineAsyncComponent(() => import("./card.vue")),
   },
@@ -24,9 +32,11 @@ export default {
 
     function maximize() {
       if (fullscreen.value) return;
+      // @ts-ignore
       const bounds = root.value.$el.getBoundingClientRect();
 
       anime({
+        // @ts-ignore
         targets: root.value.$el,
         translateX: -bounds.left,
         translateY: -bounds.top,
@@ -36,7 +46,6 @@ export default {
         duration: 250,
         easing: "easeInQuad",
       }).finished.then(() => {
-        console.log("done");
         fullscreen.value = true;
       });
     }
@@ -47,11 +56,11 @@ export default {
       fullscreen,
     };
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
-@import "../variables.scss";
+@import "../assets/styles/variables.scss";
 
 .card {
   background-position: center;

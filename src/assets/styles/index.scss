@@ -1,5 +1,5 @@
-@import "./variables.scss";
-@import "./typography.scss";
+@import './variables.scss';
+@import './typography.scss';
 
 body {
   font-family: -apple-system, Avenir, Helvetica, Arial, sans-serif;
@@ -38,6 +38,7 @@ body {
 
 @media screen and (min-width: $breakpoint-s) {
   .grid {
+    grid-column-gap: 16px;
     grid-template-columns: repeat(3, 1fr);
   }
 }

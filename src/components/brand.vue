@@ -2,17 +2,18 @@
   <Card style="grid-area: brand"></Card>
 </template>
 
-<script>
-import { defineAsyncComponent } from "vue";
+<script lang="ts">
+import { defineComponent, defineAsyncComponent } from "vue";
 
-export default {
+export default defineComponent({
+  name: "Brand",
   components: {
-    Card: defineAsyncComponent(() => import("../components/card.vue")),
+    Card: defineAsyncComponent(() => import("./card.vue")),
   },
-};
+});
 </script>
 
-<style lang="ts" scoped>
+<style lang="scss" scoped>
 .card {
   background: url("../assets/profile.jpg");
   background-position: center;

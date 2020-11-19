@@ -5,9 +5,16 @@
 </template>
 
 <script lang="ts">
-export default {};
+import { ref, defineComponent } from "vue";
+
+export default defineComponent({
+  name: "Card",
+});
 </script>
+
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
+
 .card {
   display: flex;
   flex-direction: column;

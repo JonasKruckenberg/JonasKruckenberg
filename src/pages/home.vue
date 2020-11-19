@@ -1,5 +1,5 @@
 <template>
-  <div class="grid" id="start">
+  <div class="grid">
     <Brand style="grid-area: brand" />
     <Card style="grid-area: featured">featured</Card>
     <Navigation style="grid-area: nav" />
@@ -14,7 +14,7 @@
       </p>
       <p>I also write about stuff that I find interesting.</p>
     </Card>
-    <Kolguyev />
+    <Project-Kolguyev />
     <Card>
       <h1 class="h0">foo bar</h1>
       <h1>foo bar</h1>
@@ -29,34 +29,37 @@
   <Footer></Footer>
 </template>
 
-<script>
-import { defineAsyncComponent } from "vue";
-import Card from "../components/card.vue";
-import Brand from "../cards/brand.vue";
+<script lang="ts">
+import { ref, defineComponent, defineAsyncComponent } from "vue";
+// import Card from "../components/card.vue";
+import Brand from "../components/brand.vue";
 
-export default {
+export default defineComponent({
+  name: "Home",
   components: {
-    Card,
-    Brand,
+    Card: defineAsyncComponent(() => import("../components/card.vue")),
+    Brand: defineAsyncComponent(() => import("../components/brand.vue")),
+    Navigation: defineAsyncComponent(() => import("../components/nav.vue")),
     Project: defineAsyncComponent(() => import("../components/project.vue")),
+    ProjectKolguyev: defineAsyncComponent(
+      () => import("../components/project-kolguyev.vue")
+    ),
     Footer: defineAsyncComponent(() => import("../components/footer.vue")),
-    Navigation: defineAsyncComponent(() => import("../cards/nav.vue")),
-    Kolguyev: defineAsyncComponent(() => import("../cards/kolguyev.vue")),
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
-@import "../variables.scss";
-#start {
+@import "../assets/styles/variables.scss";
+.grid {
   grid-template-areas:
     "welcome"
     "nav"
     "featured";
 }
 
-@media screen and (min-width: $breakpoint-m) and (max-width: $breakpoint-l) {
-  #start {
+@media screen and (min-width: $breakpoint-s) and (max-width: $breakpoint-l) {
+  .grid {
     grid-template-areas:
       "featured featured nav"
       "brand welcome welcome";
@@ -64,7 +67,7 @@ export default {
 }
 
 @media screen and (min-width: $breakpoint-l) {
-  #start {
+  .grid {
     grid-template-areas:
       "brand featured featured nav"
       ". . welcome nav";

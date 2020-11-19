@@ -1,5 +1,5 @@
 <template>
-  <div class="grid" id="footer">
+  <div class="grid">
     <Card>
       <span>Sitemap</span>
       <span>nav</span>
@@ -10,19 +10,20 @@
   </div>
 </template>
 
-<script>
-import { defineAsyncComponent } from "vue";
+<script lang="ts">
+import { ref, defineComponent, defineAsyncComponent } from "vue";
 
-export default {
+export default defineComponent({
+  name: "Footer",
   components: {
     Card: defineAsyncComponent(() => import("./card.vue")),
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
-@import "../variables.scss";
-#footer {
+@import "../assets/styles/variables.scss";
+.grid {
   display: grid;
   margin: 12px auto;
 
