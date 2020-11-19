@@ -1,6 +1,12 @@
 [[plugins]]
 package = "netlify-plugin-checklinks"
 
+[[plugins]]
+package = "netlify-plugin-inline-critical-css"
+  [plugins.inputs]
+    # Whether to minify the generated critical-path CSS.
+    minify = true
+
 [build]
 command = "yarn build"
 
