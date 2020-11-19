@@ -21,7 +21,18 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .project {
-  background-image: url("../assets/nightsky.jpg");
+  background-image: image-set(
+    url("../assets/nightsky1x.jpg") 1x,
+    url("../assets/nightsky2x.jpg") 2x,
+    url("../assets/nightsky3x.jpg") 3x,
+    url("../assets/nightsky4x.jpg") 4x
+  );
+  background-image: -webkit-image-set(
+    url("../assets/nightsky1x.jpg") 1x,
+    url("../assets/nightsky2x.jpg") 2x,
+    url("../assets/nightsky3x.jpg") 3x,
+    url("../assets/nightsky4x.jpg") 4x
+  );
   background-position-y: 30%;
   min-height: 20em;
   color: white;
