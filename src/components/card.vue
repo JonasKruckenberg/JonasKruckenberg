@@ -5,15 +5,7 @@
 </template>
 
 <script lang="ts">
-const colors = ["#fff", "#B29DD9", "#FDFD98", "#FE6B64", "#77DD77", "#779ECB"];
-
-export default {
-  computed: {
-    color() {
-      return colors[Math.round(Math.random() * (colors.length - 1))];
-    },
-  },
-};
+export default {};
 </script>
 <style lang="scss" scoped>
 .card {
