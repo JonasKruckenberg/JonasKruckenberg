@@ -1,13 +1,20 @@
 <template>
   <Card class="project" :class="{ fullscreen }" @click="maximize()" ref="root">
-    <img alt="" :src="image" :srcset="imageSet" :sizes="imageSizes" />
+    <img
+      alt=""
+      width="100%"
+      height="100%"
+      :src="placeholder"
+      :srcset="imageSet"
+      :sizes="imageSizes"
+    />
     <span></span>
-    <!-- <span class="header">
+    <span class="header">
       <slot name="header" />
     </span>
     <span class="details">
       <slot name="details" />
-    </span> -->
+    </span>
   </Card>
 </template>
 
@@ -29,11 +36,11 @@
       Card: defineAsyncComponent(() => import("./card.vue")),
     },
     props: {
-      image: String,
+      placeholder: String,
       imageSet: String,
       imageSizes: String,
     },
-    setup({ image, imageSet, imageSizes }) {
+    setup({ imageSet, imageSizes, placeholder }) {
       const root = ref(null);
       const fullscreen = ref(false);
 
@@ -79,7 +86,7 @@
         root,
         maximize,
         fullscreen,
-        image,
+        placeholder,
         imageSet,
         imageSizes,
       };
@@ -103,9 +110,14 @@
     grid-auto-rows: max-content;
     grid-gap: 32px;
 
+    .header {
+      z-index: 1;
+    }
+
     .details {
       padding: 32px 5vw;
       display: none;
+      z-index: 2;
     }
 
     img {

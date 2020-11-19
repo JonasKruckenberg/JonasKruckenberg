@@ -1,7 +1,8 @@
 <template>
   <Project
-    image="/nightsky3x.jpg"
-    image-set="/nightsky-480w.jpg 480w, /nightsky-768w.jpg 768w, /nightsky-1080w.jpg 1080w"
+    placeholder="/nightsky-480w.jpg"
+    image-set="/nightsky-480w.jpg 480w, /nightsky-768w.jpg 768w, /nightsky-1080w.jpg 1080w, /nightsky-1700w.jpg 1700w, /nightsky-3500w.jpg 3500w"
+    image-sizes="(max-width: 600px) 480px, 768px, 1080px, 1700px, (min-width: 1900px) 3700px"
   >
     <template v-slot:header>
       <h2>Kolguyev</h2>
@@ -24,19 +25,6 @@
 
 <style lang="scss" scoped>
   .project {
-    // background-image: image-set(
-    //   url("../assets/nightsky1x.jpg") 1x,
-    //   url("../assets/nightsky2x.jpg") 2x,
-    //   url("../assets/nightsky3x.jpg") 3x,
-    //   url("../assets/nightsky4x.jpg") 4x
-    // );
-    // background-image: -webkit-image-set(
-    //   url("../assets/nightsky1x.jpg") 1x,
-    //   url("../assets/nightsky2x.jpg") 2x,
-    //   url("../assets/nightsky3x.jpg") 3x,
-    //   url("../assets/nightsky4x.jpg") 4x
-    // );
-    // background-position-y: 30%;
     min-height: 20em;
     color: white;
   }
