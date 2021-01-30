@@ -8,6 +8,6 @@ package = "netlify-plugin-inline-critical-css"
     minify = true
 
 [build]
-command = "yarn _build"
+command = "yarn build"
 
 functions = "/functions"
