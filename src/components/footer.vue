@@ -22,7 +22,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/variables.scss";
+@import "../assets/variables.scss";
 .grid {
   display: grid;
   margin: 12px auto;

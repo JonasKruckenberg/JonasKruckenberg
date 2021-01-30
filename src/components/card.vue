@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/styles/variables.scss";
+@import "../assets/variables.scss";
 
 .card {
   display: flex;
