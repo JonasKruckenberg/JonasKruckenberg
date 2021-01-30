@@ -1,27 +1,22 @@
 <template>
-  <!-- <Project
-    placeholder="/nightsky-480w.jpg"
-    image-set="/nightsky-480w.jpg 480w, /nightsky-768w.jpg 768w, /nightsky-1080w.jpg 1080w, /nightsky-1700w.jpg 1700w, /nightsky-3500w.jpg 3500w"
-    image-sizes="(max-width: 600px) 480px, 768px, 1080px, 1700px, (min-width: 1900px) 3700px"
-  > -->
   <Project>
     <template v-slot:picture>
       <picture>
         <source
           srcset="
-            ../assets/nightsky-3500w.jpg?width=768&avif   768w,
-            ../assets/nightsky-3500w.jpg?width=1080&avif 1080w,
-            ../assets/nightsky-3500w.jpg?width=1700&avif 1700w,
-            ../assets/nightsky-3500w.jpg?avif            3500w
+            ../assets/nightsky-3500w.jpg?width=768&avif   &#160;768w,
+            ../assets/nightsky-3500w.jpg?width=1080&avif &#160;1080w,
+            ../assets/nightsky-3500w.jpg?width=1700&avif &#160;1700w,
+            ../assets/nightsky-3500w.jpg?avif            &#160;3500w
           "
           type="image/avif"
         />
         <source
           srcset="
-            ../assets/nightsky-3500w.jpg?width=768&webp   768w,
-            ../assets/nightsky-3500w.jpg?width=1080&webp 1080w,
-            ../assets/nightsky-3500w.jpg?width=1700&webp 1700w,
-            ../assets/nightsky-3500w.jpg?webp            3500w
+            ../assets/nightsky-3500w.jpg?width=768&webp   &#160;768w,
+            ../assets/nightsky-3500w.jpg?width=1080&webp &#160;1080w,
+            ../assets/nightsky-3500w.jpg?width=1700&webp &#160;1700w,
+            ../assets/nightsky-3500w.jpg?webp            &#160;3500w
           "
           type="image/webp"
         />
