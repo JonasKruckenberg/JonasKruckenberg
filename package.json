@@ -10,7 +10,7 @@
   "dependencies": {
     "@vue/server-renderer": "^3.0.5",
     "animejs": "^3.2.1",
-    "vite-plugin-imageset": "^1.0.1",
+    "vite-plugin-imageset": "^2.0.0",
     "vite-plugin-md": "^0.4.1",
     "vite-plugin-pwa": "^0.4.1",
     "vite-plugin-vuedoc": "^3.0.5",
