@@ -1,15 +1,6 @@
 <template>
   <Card>
-    <nav>
-      <ol>
-        <li>
-          <a href="#photography">Photography</a>
-        </li>
-        <li>
-          <a href="#opensource">Open Source work</a>
-        </li>
-      </ol>
-    </nav>
+    <nav></nav>
   </Card>
 </template>
 
