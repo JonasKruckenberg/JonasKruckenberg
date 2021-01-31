@@ -13,6 +13,9 @@ package = "netlify-plugin-inline-critical-css"
     # Whether to minify the generated critical-path CSS.
     minify = true
 
+[[plugins]]
+package = "netlify-plugin-debug-cache"
+
 [build]
 command = "yarn build"
 
