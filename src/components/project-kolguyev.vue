@@ -4,32 +4,32 @@
       <picture>
         <source
           srcset="
-            ../assets/nightsky-3500w.jpg?width=768&avif   &#160;768w,
-            ../assets/nightsky-3500w.jpg?width=1080&avif &#160;1080w,
-            ../assets/nightsky-3500w.jpg?width=1700&avif &#160;1700w,
-            ../assets/nightsky-3500w.jpg?avif            &#160;3500w
+            ../assets/nightsky.jpg?width=768&avif   &#160;768w,
+            ../assets/nightsky.jpg?width=1080&avif &#160;1080w,
+            ../assets/nightsky.jpg?width=1700&avif &#160;1700w,
+            ../assets/nightsky.jpg?avif            &#160;3500w
           "
           type="image/avif"
         />
         <source
           srcset="
-            ../assets/nightsky-3500w.jpg?width=768&webp   &#160;768w,
-            ../assets/nightsky-3500w.jpg?width=1080&webp &#160;1080w,
-            ../assets/nightsky-3500w.jpg?width=1700&webp &#160;1700w,
-            ../assets/nightsky-3500w.jpg?webp            &#160;3500w
+            ../assets/nightsky.jpg?width=768&webp   &#160;768w,
+            ../assets/nightsky.jpg?width=1080&webp &#160;1080w,
+            ../assets/nightsky.jpg?width=1700&webp &#160;1700w,
+            ../assets/nightsky.jpg?webp            &#160;3500w
           "
           type="image/webp"
         />
         <source
           srcset="
-            ../assets/nightsky-3500w.jpg?width=768   &#160;768w,
-            ../assets/nightsky-3500w.jpg?width=1080 &#160;1080w,
-            ../assets/nightsky-3500w.jpg?width=1700 &#160;1700w,
-            ../assets/nightsky-3500w.jpg            &#160;3500w
+            ../assets/nightsky.jpg?width=768   &#160;768w,
+            ../assets/nightsky.jpg?width=1080 &#160;1080w,
+            ../assets/nightsky.jpg?width=1700 &#160;1700w,
+            ../assets/nightsky.jpg            &#160;3500w
           "
           type="image/webp"
         />
-        <img src="../assets/nightsky-3500w.jpg?width=480" alt="" />
+        <img src="../assets/nightsky.jpg?width=480" alt="" />
       </picture>
     </template>
     <template v-slot:header>
@@ -39,24 +39,24 @@
     <template v-slot:details> </template>
   </Project>
 </template>
+<script lang="ts" setup>
+import { defineAsyncComponent } from "vue";
 
-<script lang="ts">
-import { defineComponent, defineAsyncComponent } from "vue";
-import Template from "./template.vue";
-
-export default defineComponent({
-  name: "Project-Kolguyev",
-  components: {
-    Project: defineAsyncComponent(() => import("./project.vue")),
-    Template,
-  },
-});
+const Project = defineAsyncComponent(() => import("./project.vue"));
 </script>
 
 <style lang="scss" scoped>
 .project {
   min-height: 20em;
   color: white;
+}
+picture {
+  * {
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .details {
   color: green;
