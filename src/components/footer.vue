@@ -10,15 +10,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent, defineAsyncComponent } from "vue";
+<script lang="ts" setup>
+import { defineAsyncComponent } from "vue";
 
-export default defineComponent({
-  name: "Footer",
-  components: {
-    Card: defineAsyncComponent(() => import("./card.vue")),
-  },
-});
+const Card = defineAsyncComponent(() => import("./card.vue"));
 </script>
 
 <style lang="scss" scoped>
@@ -30,6 +25,7 @@ export default defineComponent({
   grid-column-gap: 8px;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: minmax(7em, max-content);
+  grid-auto-rows: 0;
   .card {
     background-color: $black;
     color: $white;
