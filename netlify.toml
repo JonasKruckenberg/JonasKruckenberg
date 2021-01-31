@@ -2,7 +2,10 @@
 package = "netlify-plugin-checklinks"
 
 [[plugins]]
-package = "/plugins/cache-assets"
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  # Optional (but highly recommended). Defaults to [".cache"].
+  paths = ["node_modules/.cache/vite-plugin-imageset"]
 
 [[plugins]]
 package = "netlify-plugin-inline-critical-css"
