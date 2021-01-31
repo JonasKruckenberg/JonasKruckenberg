@@ -2,6 +2,9 @@
 package = "netlify-plugin-checklinks"
 
 [[plugins]]
+package = "/plugins/cache-assets"
+
+[[plugins]]
 package = "netlify-plugin-inline-critical-css"
   [plugins.inputs]
     # Whether to minify the generated critical-path CSS.
