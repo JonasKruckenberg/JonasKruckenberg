@@ -22,7 +22,6 @@ export default defineConfig({
       enforce: 'post'
     },
   ],
-  // @ts-ignore
   ssgOptions: {
     script: 'async',
     formatting: 'minify'
