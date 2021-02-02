@@ -16,8 +16,6 @@
   background-color: white;
   box-shadow: 0 1.7px 6.1px rgba(#091419, 0.02),
     0 5.6px 20.3px rgba(#091419, 0.03), 0 25px 91px rgba(#091419, 0.05);
-
-  animation: appear 0.6s;
 }
 
 @keyframes appear {
