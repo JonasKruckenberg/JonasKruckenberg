@@ -1120,10 +1120,10 @@
   dependencies:
     "@types/node" "*"
 
-"@vitejs/plugin-vue@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.1.2.tgz#64d1f0e0739675f5717015ffb4d861c53af8fe60"
-  integrity sha512-a5ORYuPsiAO4Kb2blA/x63mDiBQBxEJkbjhVtiv5IP/I7fGfpwXPPGHx9LHD4MedpXp8icngJYMKO0hOwahtmQ==
+"@vitejs/plugin-vue@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.1.4.tgz#1dd388519b75439b7733601b55238ca691864796"
+  integrity sha512-cUDILd++9jdhdjpuhgJofQqOabOKe+kTWTE2HQY2PBHEUO2fgwTurLE0cJg9UcIo1x4lHfsp+59S9TBCHgTZkw==
 
 "@vue/compiler-core@3.0.5", "@vue/compiler-core@^3.0.0", "@vue/compiler-core@^3.0.1", "@vue/compiler-core@^3.0.2":
   version "3.0.5"
@@ -1275,7 +1275,7 @@
   dependencies:
     "@vue/compiler-core" "^3.0.0"
 
-"@vuedx/typecheck@^0.6.0":
+"@vuedx/typecheck@^0.6.3":
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/@vuedx/typecheck/-/typecheck-0.6.3.tgz#d66b8dcfa8d7d37ccfa196d019c8a5cc8bc7fc4d"
   integrity sha512-1WfUI+bqg1O8Vklz24EZdsUE6ak4QCxtV6gWrUw+VUbep7ANhZM4RkaMsDFWVdeb2dip9ROrO8ESBrsIViPT8Q==
@@ -1289,7 +1289,7 @@
     resolve-from "^5.0.0"
     typescript "^4.0.3"
 
-"@vuedx/typescript-plugin-vue@0.6.3", "@vuedx/typescript-plugin-vue@^0.6.0":
+"@vuedx/typescript-plugin-vue@0.6.3", "@vuedx/typescript-plugin-vue@^0.6.3":
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/@vuedx/typescript-plugin-vue/-/typescript-plugin-vue-0.6.3.tgz#cc2d99bdc0abbde9bb5909341c47715af00539a3"
   integrity sha512-zAhXM9LDVYvjAMnTiqf6yZcJXXh1rQrH3JhcmQNmlxk26sRysfa/VWNC8qkfq9vcOKRf1eQusH4g+Vov6qPGig==
@@ -5074,19 +5074,19 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-imageset@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-imageset/-/vite-plugin-imageset-2.0.0.tgz#42652afa0ae8553a6f228a6188f36e9a38f53c7d"
-  integrity sha512-hdWe5ekHaLBYqxW0whyQXyZfniiu/esWC+UP3l+GUgHFqE55j2slKr5B62QCV7bsbtFjkiQ4NTOJbkq27eaV6g==
+vite-imagetools@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/vite-imagetools/-/vite-imagetools-2.3.0.tgz#bb0f01d2f7ff650bf6b22e40e353b5c9eb510072"
+  integrity sha512-V+X5nOhYkASeWsZsVDez7Nt2QhDQcS4OdPtZQ6raCpfikYbqQntoers80wSZU6+Gf3zve4F2y6QxQIefBQ6bPw==
   dependencies:
     picomatch "^2.2.2"
     rollup-pluginutils "^2.8.2"
     sharp "^0.27.0"
 
-vite-plugin-md@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-md/-/vite-plugin-md-0.4.1.tgz#45a0c0c3d1519a83dcd7e2953694434bada2a141"
-  integrity sha512-JCvz1KGvK4woRRhbouW5GJLfw+TKxdu/PkXmVv0KNdpJdCMTDL6tQ6dEd09aK3Z1Muz1QvGbs2uSbXN98idAbg==
+vite-plugin-md@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-md/-/vite-plugin-md-0.4.2.tgz#e8ca2cf8dbc85c30719dc5f6a244635d57fba08d"
+  integrity sha512-gAmtGCiPj0ESdWJikKTg4h0ADqybezRVOh1a51KtWqYk4WgwrvFRpTeVq9fVqLXLFhuU0iUIKJ04V3KeXAeWdQ==
   dependencies:
     gray-matter "^4.0.2"
     markdown-it "^12.0.4"
@@ -5128,10 +5128,10 @@ vite-plugin-vuedoc@^3.0.5:
     rev-hash "^3.0.0"
     slash "^3.0.0"
 
-vite-ssg@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.5.2.tgz#22034e2142928606a879708bdce630342a5f90a9"
-  integrity sha512-sC/zXzYvGmW+26l+CwcUx6j0O4YCqLaAAjkM1r9CEZ1j3mbG/aAcFzXH7hzXxY3ImzUji0Wj10L7sYl7f2Fugg==
+vite-ssg@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.7.0.tgz#e39763f89cf723c9050d4c0a46a2a337eca0acc4"
+  integrity sha512-6Jnx17J1n5NwHrVVDxdKocfR6QlRkmrVfySKu7o7uEsd+t5o1S02WTi0MD9GpqxhB98lui8thI+WWM9x5FckQw==
   dependencies:
     "@vueuse/head" "^0.2.3"
     chalk "^4.1.0"
@@ -5141,10 +5141,10 @@ vite-ssg@^0.5.2:
     prettier "^2.2.1"
     yargs "^16.2.0"
 
-vite@^2.0.0-beta.59:
-  version "2.0.0-beta.59"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.0.0-beta.59.tgz#e01a795aebedc0cb44d653c33b72ab7b831057ae"
-  integrity sha512-tlxEPFpVI1wV+vk+t/ypwBZfNmxKcorok8YF82MrQIqCDeRXnHvp33oWPIsRrO0V7UdnnlkKQOJJiIi3AIUFOA==
+vite@^2.0.0-beta.61:
+  version "2.0.0-beta.61"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.0.0-beta.61.tgz#da605152999cf8943672202ab6b38b68f4c7b9e4"
+  integrity sha512-NyRZ7vCwtfw/z18HmFr5ZIesum26Dg9x4ykuit1YmYsZlPxx/oF3il1U6MqkXZD2wy8HaR5fQi9d9B/6vEJMbw==
   dependencies:
     esbuild "^0.8.34"
     postcss "^8.2.1"
