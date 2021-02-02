@@ -10,5 +10,4 @@ import 'vite-plugin-vuedoc/style.css'
 // createApp(App).use(createRouter({ routes, history: createWebHistory() })).mount('#app')
 export const createApp = ViteSSG(App, {
     routes
-}
-)
+})

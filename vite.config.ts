@@ -52,7 +52,8 @@ export default defineConfig({
   // @ts-ignore
   ssgOptions: {
     script: 'async',
-    formatting: 'minify'
+    formatting: 'minify',
+    mock: true
   },
   optimizeDeps: {
     include: ['animejs/lib/anime.es.js']

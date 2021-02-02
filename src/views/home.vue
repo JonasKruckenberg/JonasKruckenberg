@@ -1,7 +1,7 @@
 <template>
   <div class="grid">
     <Brand style="grid-area: brand" />
-    <Card style="grid-area: featured; order: 1">featured</Card>
+    <Card style="grid-area: featured; order: 1"> featured </Card>
     <Navigation style="grid-area: nav; order: 1" />
     <Card style="grid-area: welcome; order: 1">
       <h1>
