@@ -4,28 +4,28 @@
       <picture>
         <source
           srcset="
-            ../assets/nightsky.jpg?width=768&avif   &#160;768w,
-            ../assets/nightsky.jpg?width=1080&avif &#160;1080w,
-            ../assets/nightsky.jpg?width=1700&avif &#160;1700w,
-            ../assets/nightsky.jpg?avif            &#160;3500w
+            ../assets/nightsky.jpg?width=768&avif   768w,
+            ../assets/nightsky.jpg?width=1080&avif 1080w,
+            ../assets/nightsky.jpg?width=1700&avif 1700w,
+            ../assets/nightsky.jpg?avif            3500w
           "
           type="image/avif"
         />
         <source
           srcset="
-            ../assets/nightsky.jpg?width=768&webp   &#160;768w,
-            ../assets/nightsky.jpg?width=1080&webp &#160;1080w,
-            ../assets/nightsky.jpg?width=1700&webp &#160;1700w,
-            ../assets/nightsky.jpg?webp            &#160;3500w
+            ../assets/nightsky.jpg?width=768&webp   768w,
+            ../assets/nightsky.jpg?width=1080&webp 1080w,
+            ../assets/nightsky.jpg?width=1700&webp 1700w,
+            ../assets/nightsky.jpg?webp            3500w
           "
           type="image/webp"
         />
         <source
           srcset="
-            ../assets/nightsky.jpg?width=768   &#160;768w,
-            ../assets/nightsky.jpg?width=1080 &#160;1080w,
-            ../assets/nightsky.jpg?width=1700 &#160;1700w,
-            ../assets/nightsky.jpg            &#160;3500w
+            ../assets/nightsky.jpg?width=768   768w,
+            ../assets/nightsky.jpg?width=1080 1080w,
+            ../assets/nightsky.jpg?width=1700 1700w,
+            ../assets/nightsky.jpg            3500w
           "
           type="image/webp"
         />
