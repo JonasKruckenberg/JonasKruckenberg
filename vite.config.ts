@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import markdown from 'vite-plugin-md'
 import { VitePWA } from 'vite-plugin-pwa'
 import imagetools from 'vite-imagetools'
+import pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,6 +14,9 @@ export default defineConfig({
     }),
     markdown({
       headEnabled: true
+    }),
+    pages({
+      extensions: ['vue', 'md']
     }),
     imagetools(),
     VitePWA({

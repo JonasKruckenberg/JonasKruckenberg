@@ -25,6 +25,7 @@
     "vite": "^2.0.0-beta.61",
     "vite-imagetools": "^2.3.0",
     "vite-plugin-md": "^0.4.2",
+    "vite-plugin-pages": "^0.1.9",
     "vite-plugin-pwa": "^0.4.1",
     "vite-ssg": "^0.7.0"
   }
