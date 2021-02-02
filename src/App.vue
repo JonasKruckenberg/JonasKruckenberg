@@ -9,12 +9,30 @@ useHead({
   title: "Portfolio | Jonas Kruckenberg",
   meta: [
     {
-      name: `description`,
-      content: `Im a datascience student and web3 contributor. Welcome to my portfolio!`,
+      name: "description",
+      property: "og:description",
+      content:
+        "Im a datascience student and web3 contributor. Welcome to my portfolio!",
     },
     {
       name: "theme-color",
       content: "#e63946",
+    },
+    {
+      property: "og:type",
+      content: "profile",
+    },
+    {
+      property: "profile:first_name",
+      content: "Jonas",
+    },
+    {
+      property: "profile:last_name",
+      content: "Kruckenberg",
+    },
+    {
+      property: "profile:username",
+      content: "jkruckenberg",
     },
   ],
   link: [
