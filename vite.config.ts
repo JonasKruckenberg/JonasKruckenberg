@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import markdown from 'vite-plugin-vuedoc'
+import markdown from 'vite-plugin-md'
 import { VitePWA } from 'vite-plugin-pwa'
 import imagetools from 'vite-imagetools'
 
@@ -8,8 +8,12 @@ import imagetools from 'vite-imagetools'
 export default defineConfig({
   clearScreen: false,
   plugins: [
-    vue(),
-    markdown({}),
+    vue({
+      include: [/\.vue$/, /\.md$/]
+    }),
+    markdown({
+      headEnabled: true
+    }),
     imagetools(),
     VitePWA({
       manifest: {
