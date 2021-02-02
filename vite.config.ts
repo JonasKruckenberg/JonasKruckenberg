@@ -4,6 +4,7 @@ import markdown from 'vite-plugin-md'
 import { VitePWA } from 'vite-plugin-pwa'
 import imagetools from 'vite-imagetools'
 import pages from 'vite-plugin-pages'
+import hljs from 'highlight.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +14,24 @@ export default defineConfig({
       include: [/\.vue$/, /\.md$/]
     }),
     markdown({
-      headEnabled: true
+      headEnabled: true,
+      wrapperComponent: null,
+      markdownItOptions: {
+        highlight: function (str, lang) {
+          if (lang && hljs.getLanguage(lang)) {
+            try {
+              return '<pre class="hljs"><code>' +
+                hljs.highlight(lang, str, true).value +
+                '</code></pre>';
+            } catch (__) { }
+          }
+
+          return '<pre class="hljs"><code>' + str + '</code></pre>';
+        }
+      },
+      markdownItSetup(md) {
+        md.use(require('@iktakahiro/markdown-it-katex'), { fleqn: true })
+      }
     }),
     pages({
       extensions: ['vue', 'md']
