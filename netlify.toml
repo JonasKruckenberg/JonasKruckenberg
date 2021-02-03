@@ -20,6 +20,11 @@ package = "netlify-plugin-inline-critical-css"
     seo = 0.9
     pwa = 0
 
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
 [build]
 command = "yarn build"
 
