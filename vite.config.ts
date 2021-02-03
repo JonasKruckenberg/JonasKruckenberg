@@ -5,14 +5,12 @@ import { VitePWA } from 'vite-plugin-pwa'
 import imagetools from 'vite-imagetools'
 import pages from 'vite-plugin-pages'
 import hljs from 'highlight.js'
+import escapeHtml from 'escape-html'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   clearScreen: false,
   plugins: [
-    vue({
-      include: [/\.vue$/, /\.md$/]
-    }),
     markdown({
       headEnabled: true,
       wrapperComponent: null,
@@ -26,12 +24,15 @@ export default defineConfig({
             } catch (__) { }
           }
 
-          return '<pre class="hljs"><code>' + str + '</code></pre>';
+          return '<pre class="hljs"><code>' + escapeHtml(str) + '</code></pre>';
         }
       },
       markdownItSetup(md) {
-        md.use(require('@iktakahiro/markdown-it-katex'), { fleqn: true })
+        md.use(require('@iktakahiro/markdown-it-katex'), { output: 'html' })
       }
+    }),
+    vue({
+      include: [/\.vue$/, /\.md$/]
     }),
     pages({
       extensions: ['vue', 'md']
