@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     markdown({
       headEnabled: true,
-      wrapperComponent: null,
+      wrapperComponent: 'blog',
       markdownItOptions: {
         highlight: function (str, lang) {
           if (lang && hljs.getLanguage(lang)) {
@@ -27,9 +27,9 @@ export default defineConfig({
           return '<pre class="hljs"><code>' + escapeHtml(str) + '</code></pre>';
         }
       },
-      markdownItSetup(md) {
-        md.use(require('@iktakahiro/markdown-it-katex'), { output: 'html' })
-      }
+      markdownItUses: [
+        [require('@iktakahiro/markdown-it-katex'), { output: 'html' }]
+      ],
     }),
     vue({
       include: [/\.vue$/, /\.md$/]
