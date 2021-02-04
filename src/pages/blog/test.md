@@ -1,7 +1,13 @@
 ---
 title: 'Test Blog'
 desc: 'desc'
+hero_image: 'palmtree'
+link:
+  - rel: 'stylesheet'
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css'
 ---
+
+<h1 class="display">Fancy Heading</h1>
 
 # h1 Heading
 ## h2 Heading
@@ -9,7 +15,6 @@ desc: 'desc'
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
-
 
 ## Horizontal Rules
 
