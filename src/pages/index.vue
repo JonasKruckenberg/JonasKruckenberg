@@ -2,7 +2,7 @@
   <div class="grid">
     <Brand style="grid-area: brand" />
     <Card style="grid-area: featured; order: 1"> featured </Card>
-    <Navigation style="grid-area: nav; order: 1" />
+    <Card style="grid-area: nav; order: 1">nav</Card>
     <Card style="grid-area: welcome; order: 1">
       <h1>
         Hi 👋 <br />
@@ -14,7 +14,7 @@
       </p>
       <p>I also write about stuff that I find interesting.</p>
     </Card>
-    <Project-Kolguyev />
+    <Project-Kolguyev class="h-large w-medium" />
     <Card>
       <h1 class="h0">foo bar</h1>
       <h1>foo bar</h1>
@@ -34,7 +34,6 @@ import { defineAsyncComponent } from "vue";
 
 const Card = defineAsyncComponent(() => import("../components/card.vue"));
 const Brand = defineAsyncComponent(() => import("../components/brand.vue"));
-const Navigation = defineAsyncComponent(() => import("../components/nav.vue"));
 const Project = defineAsyncComponent(() => import("../components/project.vue"));
 const ProjectKolguyev = defineAsyncComponent(
   () => import("../components/project-kolguyev.vue")
@@ -43,7 +42,7 @@ const Footer = defineAsyncComponent(() => import("../components/footer.vue"));
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@import "../assets/styles/variables.scss";
 .grid {
   grid-template-areas:
     "welcome"
