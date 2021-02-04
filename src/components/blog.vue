@@ -4,44 +4,13 @@
       <picture>
         <source
           type="image/avif"
-          media="(min-width: 1300px)"
-          srcset="../assets/img/palmtree.jpg?avif&width=2200"
-        />
-        <source
-          type="image/avif"
-          media="(min-width: 1012px)"
-          srcset="../assets/img/palmtree.jpg?avif&width=1212"
-        />
-        <source
-          type="image/avif"
-          media="(min-width: 768px)"
-          srcset="../assets/img/palmtree.jpg?avif&width=968"
-        />
-        <source
-          type="image/avif"
-          media="(min-width: 540px)"
-          srcset="../assets/img/palmtree.jpg?avif&width=740"
-        />
-
-        <source
-          type="image/webp"
-          media="(min-width: 1300px)"
-          srcset="../assets/img/palmtree.jpg?webp&width=2200"
+          sizes="(min-width: 768px) 768w, (min-width: 1012px) 1012w, (min-width: 1500px) 1500w, (min-width: 2100px) 2100w, 540w"
+          :srcset="avif"
         />
         <source
           type="image/webp"
-          media="(min-width: 1012px)"
-          srcset="../assets/img/palmtree.jpg?webp&width=1212"
-        />
-        <source
-          type="image/webp"
-          media="(min-width: 768px)"
-          srcset="../assets/img/palmtree.jpg?webp&width=968"
-        />
-        <source
-          type="image/webp"
-          media="(min-width: 540px)"
-          srcset="../assets/img/palmtree.jpg?webp&width=740"
+          sizes="(min-width: 768px) 768w, (min-width: 1012px) 1012w, (min-width: 1500px) 2500w, (min-width: 2100px) 2100w, 540w"
+          :srcset="webp"
         />
         <img src="../assets/img/palmtree.jpg" alt="" />
       </picture>
@@ -87,6 +56,25 @@ function useWidths(
 
   return out;
 }
+
+const avif = useWidths(
+  props.frontmatter?.hero_image,
+  "avif",
+  540,
+  768,
+  1012,
+  1500,
+  2100
+);
+const webp = useWidths(
+  props.frontmatter?.hero_image,
+  "webp",
+  540,
+  768,
+  1012,
+  1500,
+  2100
+);
 </script>
 
 <style lang="scss">
