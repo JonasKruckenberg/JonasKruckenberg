@@ -11,7 +11,8 @@ body {
 }
 
 a {
-  color: $teal;
+  color: $primary;
+  font-weight: $font-weight-bold;
 }
 
 
@@ -62,6 +63,7 @@ a {
 
 .w-small {
   grid-column: span 2;
+  min-width: 30vw;
 }
 .w-medium {
   grid-column: span 3;

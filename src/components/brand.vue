@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@import "../assets/styles/variables.scss";
 #brand {
   display: none;
   grid-column: span 2;

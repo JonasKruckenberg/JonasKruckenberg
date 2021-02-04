@@ -36,11 +36,14 @@ h3,
 h4,
 .h4,
 .f3 {
-  .bold {
+  &.bold {
     font-weight: $font-weight-bold;
   }
-  .light {
+  &.light {
     font-weight: $font-weight-light;
+  }
+  &.display {
+    font-family: 'Lobster', cursive;
   }
 }
 .h0 {
@@ -85,7 +88,7 @@ h6,
 .f5 {
   font-size: $font-size-xs;
 
-  .bold {
+  &.bold {
     font-weight: $font-weight-bold;
   }
 }
@@ -93,7 +96,7 @@ h6,
 .f6 {
   font-size: $font-size-xxs;
 
-  .bold {
+  &.bold {
     font-weight: $font-weight-bold;
   }
 }

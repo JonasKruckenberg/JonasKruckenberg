@@ -83,7 +83,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@import "../assets/styles/variables.scss";
 
 .card {
   position: relative;
