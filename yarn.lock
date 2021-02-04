@@ -4991,10 +4991,10 @@ vite-plugin-pwa@^0.4.1:
     pretty-bytes "^5.5.0"
     workbox-build "^6.0.2"
 
-vite-ssg@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.7.0.tgz#e39763f89cf723c9050d4c0a46a2a337eca0acc4"
-  integrity sha512-6Jnx17J1n5NwHrVVDxdKocfR6QlRkmrVfySKu7o7uEsd+t5o1S02WTi0MD9GpqxhB98lui8thI+WWM9x5FckQw==
+vite-ssg@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.8.0.tgz#331fc93c84721e992d306eaec1d29f3018341e74"
+  integrity sha512-WAEs2bivu3F4nwC01KQWJjb4Z4rwob+lU12TPY5+EZsz4I2ZzD6tQJcQ9q3DPY4I1bTsPd7CdKKxD8IUuWU6qA==
   dependencies:
     "@vueuse/head" "^0.2.3"
     chalk "^4.1.0"
@@ -5030,6 +5030,18 @@ vscode-web-custom-data@^0.3.2:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/vscode-web-custom-data/-/vscode-web-custom-data-0.3.3.tgz#9e1f2388c718d6f190038a19d144834a436b876f"
   integrity sha512-orMjjj1r4efP5ocODYZm3orpANakRBsxPZPDoD5UIrFOPKDFtMJQLp6PIH1rb3AYVRD1iYXMhDQoC6tZ+DrigA==
+
+vue-demi@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.6.0.tgz#e314282f704cb449119b9fd002cbbc0e39f591fe"
+  integrity sha512-8GEJa0mHJpYJeGeq5fD1pJct2kfdl30PHfmL1NaJ97mgKPyKojlIRt/3inGBK4Y0ylCI6T5vOo3chwpqDOq/Hw==
+
+vue-promised@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vue-promised/-/vue-promised-2.0.3.tgz#57e7543d1a51994787f21e0d5373c68b0a347d60"
+  integrity sha512-VeSWIHSMAxw3jJ94SAPZqcGnTaDBfAk/xdsHdWQ8a0I/xJdjkEXR94Ne8sMxgbQudt/ZPnXPAy7ws4XDjwWcxw==
+  dependencies:
+    vue-demi "^0.6.0"
 
 vue-router@^4.0.3:
   version "4.0.3"
