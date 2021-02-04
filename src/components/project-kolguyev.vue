@@ -3,33 +3,47 @@
     <template v-slot:picture>
       <picture>
         <source
-          srcset="
-            ../assets/nightsky.jpg?width=768&avif   768w,
-            ../assets/nightsky.jpg?width=1080&avif 1080w,
-            ../assets/nightsky.jpg?width=1700&avif 1700w,
-            ../assets/nightsky.jpg?avif            3500w
-          "
           type="image/avif"
+          media="(min-width: 1300px)"
+          srcset="../assets/img/nightsky.jpg?avif&width=2400"
         />
         <source
-          srcset="
-            ../assets/nightsky.jpg?width=768&webp   768w,
-            ../assets/nightsky.jpg?width=1080&webp 1080w,
-            ../assets/nightsky.jpg?width=1700&webp 1700w,
-            ../assets/nightsky.jpg?webp            3500w
-          "
-          type="image/webp"
+          type="image/avif"
+          media="(min-width: 1012px)"
+          srcset="../assets/img/nightsky.jpg?avif&width=1412"
         />
         <source
-          srcset="
-            ../assets/nightsky.jpg?width=768   768w,
-            ../assets/nightsky.jpg?width=1080 1080w,
-            ../assets/nightsky.jpg?width=1700 1700w,
-            ../assets/nightsky.jpg            3500w
-          "
-          type="image/webp"
+          type="image/avif"
+          media="(min-width: 768px)"
+          srcset="../assets/img/nightsky.jpg?avif&width=1368"
         />
-        <img src="../assets/nightsky.jpg?width=480" alt="" />
+        <source
+          type="image/avif"
+          media="(min-width: 540px)"
+          srcset="../assets/img/nightsky.jpg?avif&width=1140"
+        />
+
+        <source
+          type="image/webp"
+          media="(min-width: 1300px)"
+          srcset="../assets/img/nightsky.jpg?webp&width=2400"
+        />
+        <source
+          type="image/webp"
+          media="(min-width: 1012px)"
+          srcset="../assets/img/nightsky.jpg?webp&width=1412"
+        />
+        <source
+          type="image/webp"
+          media="(min-width: 768px)"
+          srcset="../assets/img/nightsky.jpg?webp&width=1368"
+        />
+        <source
+          type="image/webp"
+          media="(min-width: 540px)"
+          srcset="../assets/img/nightsky.jpg?webp&width=1140"
+        />
+        <img src="../assets/img/nightsky.jpg?width=480" alt="" />
       </picture>
     </template>
     <template v-slot:header>
