@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+I work on pushing the limits of small and secure app @tauri-apps, Local First Software and peer-to-peer networking.
+
 <!--
 **JonasKruckenberg/JonasKruckenberg** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
