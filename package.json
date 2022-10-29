@@ -1,0 +1,7 @@
+{
+  "name": "JonasKruckenberg",
+  "private": true,
+  "devDependencies": {
+    "netlify-plugin-cache": "^1.0.3"
+  }
+}
