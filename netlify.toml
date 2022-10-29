@@ -18,4 +18,9 @@ to = "/index.html"
 status = 200
 
 [build]
-command = "trunk build --release"
+command = """
+npm install -g terser
+cargo install cargo-binstall
+cargo binstall trunk
+trunk build --release
+"""
