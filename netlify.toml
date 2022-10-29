@@ -1,9 +1,4 @@
 [[plugins]]
-package = "netlify-plugin-cache"
-  [plugins.inputs]
-  paths = ["node_modules/.cache/vite-plugin-imageset"]
-
-[[plugins]]
 package = "netlify-plugin-inline-critical-css"
   [plugins.inputs]
     # Whether to minify the generated critical-path CSS.
@@ -26,6 +21,4 @@ to = "/index.html"
 status = 200
 
 [build]
-command = "yarn build"
-
-functions = "/functions"
+command = "trunk build --release"
