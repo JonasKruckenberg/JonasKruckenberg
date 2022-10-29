@@ -2,6 +2,17 @@
 package = "netlify-plugin-inline-critical-css"
 
 [[plugins]]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  paths = [
+    "~/.cargo/bin/",
+    "~/.cargo/registry/index/",
+    "~/.cargo/registry/cache/",
+    "~/.cargo/git/db/",
+    "target/"
+  ]
+
+[[plugins]]
   package = "@netlify/plugin-lighthouse"
  
   # optional, fails build when a category is below a threshold
