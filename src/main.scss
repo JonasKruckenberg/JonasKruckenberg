@@ -2,6 +2,10 @@ body {
   padding: 1em;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 .title {
   font-size: 10em;
   display: flex;
@@ -15,10 +19,4 @@ body {
   .kruckenberg {
     width: 12.6ch;
   }
-}
-
-.text {
-  font-family: "Inconsolata", sans-serif;
-  font-size: 2em;
-  font-stretch: condensed; 
 }
