@@ -4,6 +4,7 @@ dist = "dist"
 
 [tools]
 wasm_opt = "version_110"
+sass = "1.55.0"
 
 [[hooks]]
 # Runs terser on the generated javascript glue-code

@@ -1,0 +1,24 @@
+body {
+  padding: 1em;
+}
+
+.title {
+  font-size: 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-block: 0.67em;
+
+  .jonas {
+    width: 7ch;
+  }
+  .kruckenberg {
+    width: 12.6ch;
+  }
+}
+
+.text {
+  font-family: "Inconsolata", sans-serif;
+  font-size: 2em;
+  font-stretch: condensed; 
+}
