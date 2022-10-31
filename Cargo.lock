@@ -174,8 +174,10 @@ version = "0.8.2"
 source = "git+https://github.com/sycamore-rs/sycamore?rev=abd556cbc02047042dad2ebd04405e455a9b11b2#abd556cbc02047042dad2ebd04405e455a9b11b2"
 dependencies = [
  "ahash",
+ "html-escape",
  "indexmap",
  "js-sys",
+ "once_cell",
  "paste",
  "sycamore-core",
  "sycamore-macro",

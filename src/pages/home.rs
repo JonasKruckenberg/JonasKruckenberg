@@ -1,9 +1,7 @@
-
 use sycamore::prelude::*;
-use sycamore_router::{Route, Router, HistoryIntegration};
 
 #[component]
-fn Home<G: Html>(cx: Scope) -> View<G> {
+pub fn Home<G: Html>(cx: Scope) -> View<G> {
     view! { cx,
         div {
             h1 {
@@ -25,6 +23,9 @@ fn Home<G: Html>(cx: Scope) -> View<G> {
                 }
             }
             p {
+                "Hey! My website is currently under construction, so there is nothing here."
+            }
+            p {
                 "In the meantime, check out my "
                 a(href="https://github.com/JonasKruckenberg") {
                     "GitHub"
@@ -36,42 +37,5 @@ fn Home<G: Html>(cx: Scope) -> View<G> {
                 " Profile."
             }
         }
-    }
-}
-
-#[component]
-fn NotFound<G: Html>(cx: Scope) -> View<G> {
-    view! { cx,
-        p {
-            h1 {
-                "404"
-            }
-            a(href = "/") {
-                "Get me back!!"
-            }
-        }
-    }
-}
-
-#[derive(Route)]
-enum AppRoutes {
-    #[to("/")]
-    Home,
-    #[not_found]
-    NotFound,
-}
-
-#[component]
-pub fn App<G: Html>(cx: Scope) -> View<G> {
-    view! { cx,
-        Router(
-            integration=HistoryIntegration::new(),
-            view=|cx, route: &ReadSignal<AppRoutes>| {
-                match route.get().as_ref() {
-                    AppRoutes::Home => Home(cx),
-                    AppRoutes::NotFound => NotFound(cx)
-                }
-            }
-        )
     }
 }
