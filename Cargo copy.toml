@@ -8,8 +8,8 @@ version = "0.1.0"
 [dependencies]
 log = {version = "0.4.17", features = ["release_max_level_off"]}
 wasm-logger = "0.2.0"
-sycamore = { git = "https://github.com/sycamore-rs/sycamore", rev = "abd556cbc02047042dad2ebd04405e455a9b11b2" }
-sycamore-router = { git = "https://github.com/sycamore-rs/sycamore", rev = "abd556cbc02047042dad2ebd04405e455a9b11b2" }
+yew = "0.19.3"
+yew-router = "0.16.0"
 
 [profile.release]
 codegen-units = 1
