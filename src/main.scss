@@ -1,12 +1,18 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/SpaceGrotesk-VariableFont_wght.woff2") format("woff2");
+}
+
 body {
   padding: 1em;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 p {
   font-size: 1.5em;
 }
 
-.title {
+h1 {
   font-size: 10em;
   display: flex;
   flex-direction: column;
