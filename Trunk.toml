@@ -11,9 +11,3 @@ sass = "1.55.0"
 stage = "post_build"
 command = "bash"
 command_arguments = ["-c", "if [[ $TRUNK_PROFILE == \"release\" ]]; then terser $TRUNK_STAGING_DIR/*.js -o $TRUNK_STAGING_DIR/*.js --compress --mangle; fi"]
-
-[[hooks]]
-# Runs SSG on production builds
-stage = "post_build"
-command = "bash"
-command_arguments = ["-c", "if [[ $TRUNK_PROFILE == \"release\" ]]; then cargo run --release --features ssg -- $TRUNK_STAGING_DIR; fi"]
