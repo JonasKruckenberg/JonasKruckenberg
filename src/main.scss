@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/SpaceGrotesk-VariableFont_wght.woff2") format("woff2");
+  src: local('Space Grotesk'), local('Space Grotesk'), url("/SpaceGrotesk-VariableFont_wght.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
