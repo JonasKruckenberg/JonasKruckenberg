@@ -1,0 +1,24 @@
+[[plugins]]
+package = "netlify-plugin-inline-critical-css"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+ 
+  # optional, fails build when a category is below a threshold
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+    pwa = 0
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[build.environment]
+  NPM_FLAGS = "--version" # prevent Netlify npm install
+[build]
+  command = 'npx pnpm install --store=node_modules/.pnpm-store && npm run build'
+  publish = 'dist'
