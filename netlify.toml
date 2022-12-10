@@ -2,17 +2,6 @@
 package = "netlify-plugin-inline-critical-css"
 
 [[plugins]]
-package = "netlify-plugin-cache"
-  [plugins.inputs]
-  paths = [
-    "~/.cargo/bin/",
-    "~/.cargo/registry/index/",
-    "~/.cargo/registry/cache/",
-    "~/.cargo/git/db/",
-    "target/"
-  ]
-
-[[plugins]]
   package = "@netlify/plugin-lighthouse"
  
   # optional, fails build when a category is below a threshold
@@ -28,10 +17,8 @@ from = "/*"
 to = "/index.html"
 status = 200
 
+[build.environment]
+  NPM_FLAGS = "--version" # prevent Netlify npm install
 [build]
-command = """
-npm install -g terser
-wget -qO- https://github.com/thedodd/trunk/releases/download/v0.16.0/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xzf-
-export CARGO_UNSTABLE_SPARSE_REGISTRY=true
-trunk build --release
-"""
+  command = 'npx pnpm install --store=node_modules/.pnpm-store && npm run build'
+  publish = 'dist'
