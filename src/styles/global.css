@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+html {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+    arial, sans-serif;
+  /* background-color: #334662; */
+  background-color: #2e2e43;
+  /* color: #f6cb6d; */
+  /* color: #ffe4aa; */
+  color: white;
+}
+
+a {
+    /* color: #f6cb6d; */
+    /* color: #ffe4aa; */
+    color: white;
+    text-decoration-color: #ffc477;
+}
+
+main {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 60ch;
+}
+
+code {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+    monospace;
+}
