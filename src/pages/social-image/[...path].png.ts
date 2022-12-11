@@ -7,21 +7,30 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../config'
 const cjs = createRequire(import.meta.url);
 const sharp = cjs('sharp');
 
+const blogPosts = Object.fromEntries(Object.entries(import.meta.glob("../blog/*.{md,mdx}")).map(([path, getInfo]) => {
+    path = path.replaceAll('../', '')
+    path = path.replace('.md', '')
+    path = path.replace('.mdx', '')
+
+    return [path, getInfo]
+}))
+
 export async function getStaticPaths() {
-    const infos = Object.values(import.meta.glob("../blog/*.{md,mdx}"))
+    const paths = [...Object.keys(blogPosts), 'index', 'blog']
 
-    const posts = await Promise.all(infos.map(async getPost => {
-        const post = await getPost() as any
-
-        return { params: { title: post.frontmatter.title, description: post.frontmatter.description } }
-    }))
-
-    return [...posts, { params: { title: SITE_TITLE, description: SITE_DESCRIPTION } }]
+    return paths.map(path => ({ params: { path } }));
 }
 
 export async function get({ params, request }) {
-    // Create template
-    const template = createTemplate(params.title, params.description);
+    const getInfo = blogPosts[params.path];
+
+    let template
+    if (getInfo) {
+        const info = await getInfo() as Record<string, any>
+        template = createTemplate(info.frontmatter.title, info.frontmatter.description);
+    } else {
+        template = createTemplate(SITE_TITLE, SITE_DESCRIPTION)
+    }
 
     // Generate our image
     const svgBuffer = Buffer.from(template);

@@ -38,6 +38,10 @@ footer {
   max-width: 70vw;
 }
 
+pre {
+  padding: 1rem;
+}
+
 code {
   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
