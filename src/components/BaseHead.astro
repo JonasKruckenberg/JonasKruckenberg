@@ -31,13 +31,12 @@ const socialImage = new URL(`/social-image/${title}-${description}.png`, Astro.u
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
+<meta property="og:image" content={socialImage}>
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-
-<meta property="og:image" content={socialImage}>
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content={socialImage}>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@jonaskruckie" />
+<meta name="twitter:url" content={Astro.url} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={socialImage} />
