@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jonaskruckenberg.de/sitemap-index.xml
