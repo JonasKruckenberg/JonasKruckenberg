@@ -11,9 +11,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), critters(), compress()],
   markdown: {
     shikiConfig: {
-      // theme: 'rose-pine-moon'
-      // theme: 'github-dark'
-      // theme: 'ayu'
       theme: JSON.parse(fs.readFileSync('./code-theme.json', 'utf-8'))
     }
   }
