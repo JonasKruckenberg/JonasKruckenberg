@@ -1,21 +1,28 @@
-<div class="stripes">
-    <div style="--color: var(--black);"></div>
-    <div style="--color: var(--dark-red);"></div>
-    <div class="spacer"></div>
-    <div style="--color: var(--red);"></div>
-    <div class="spacer"></div>
-    <div style="--color: var(--orange);"></div>
-    <div class="spacer"></div>
-    <div style="--color: var(--yellow);"></div>
-    <div class="spacer"></div>
-    <div style="--color: var(--bright-yellow);"></div>
-</div>
+<header>
+    <div class="stripes">
+        <div style="--color: var(--black);"></div>
+        <div style="--color: var(--dark-red);"></div>
+        <div class="spacer"></div>
+        <div style="--color: var(--red);"></div>
+        <div class="spacer"></div>
+        <div style="--color: var(--orange);"></div>
+        <div class="spacer"></div>
+        <div style="--color: var(--yellow);"></div>
+        <div class="spacer"></div>
+        <div style="--color: var(--bright-yellow);"></div>
+    </div>
+</header>
 <style>
+    header {
+        height: calc(5 * 3.1rem);
+    }
     .stripes {
         --grid-height: .5rem;
         --spacing: .8rem;
         margin: calc(-1 * 1em);
         transform: translateY(-60%);
+        position: absolute;
+        width: 100vw;
     }
     .stripes div {
         position: relative;
