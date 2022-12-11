@@ -6,11 +6,13 @@ specifiers:
   '@astrojs/sitemap': ^1.0.0
   astro: ^1.6.14
   astro-compress: ^1.1.19
+  astro-critters: ^1.1.19
   sharp: ^0.31.2
 
 dependencies:
   astro: 1.6.14
   astro-compress: 1.1.19
+  astro-critters: 1.1.19
 
 devDependencies:
   '@astrojs/mdx': 0.12.1
@@ -811,6 +813,12 @@ packages:
 
   /astro-compress/1.1.19:
     resolution: {integrity: sha512-omU2Y6YeB2XvRtjFFQMuXpRwrRWp+SJ1+PES9DqSjE/AK+5Ae3IeDOWRdSg+Uji1RoSrpjZmwh87a16f8ADI0g==}
+    dependencies:
+      '@nikolarhristov/pipeline': 0.1.1
+    dev: false
+
+  /astro-critters/1.1.19:
+    resolution: {integrity: sha512-RUMaroEeT33QkzMYDQeuVQBowvUM7cZIF5khKPjzaPNir/dQOV7/TseYsKIA4qA68DeZmDjJUpEvo0LFBHpG9g==}
     dependencies:
       '@nikolarhristov/pipeline': 0.1.1
     dev: false
