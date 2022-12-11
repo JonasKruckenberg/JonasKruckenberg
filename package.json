@@ -11,7 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.6.14"
+    "astro": "^1.6.14",
+    "astro-compress": "^1.1.19"
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.12.1",
