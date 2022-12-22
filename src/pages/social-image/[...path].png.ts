@@ -45,6 +45,8 @@ export async function get({ params, request }) {
     };
 }
 
+// breaks a string into a set of strings with a maximum length. 
+// This is used to prevent horizontal text overflow 
 function breakText(str: string, maxLines: number, maxLineLen: number) {
     const segmenterTitle = new Intl.Segmenter('en-US', { granularity: 'word' });
     const segments = segmenterTitle.segment(str);
