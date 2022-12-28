@@ -5,19 +5,18 @@
 <div>
     {#if !import.meta.env.SSR}
         <Giscus
-            repo="JonasKruckenberg/JonasKruckenberg"
-            repo-id="MDEwOlJlcG9zaXRvcnkzMDczMDE3MzU="
-            category="Blog"
-            category-id="DIC_kwDOElENZ84CTS3r"
-            mapping="title"
-            strict="1"
-            reactions-enabled="1"
-            emit-metadata="0"
-            input-position="top"
-            theme="dark"
-            lang="en"
-            loading="lazy"
-            async
+        repo="JonasKruckenberg/JonasKruckenberg"
+        repoId="MDEwOlJlcG9zaXRvcnkzMDczMDE3MzU="
+        category="Blog"
+        categoryId="DIC_kwDOElENZ84CTS3r"
+        mapping="title"
+        strict="1"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="dark"
+        lang="en"
+        loading="lazy"
         />
     {/if}
 </div>
