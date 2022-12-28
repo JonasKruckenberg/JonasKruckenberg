@@ -73,7 +73,7 @@ function breakText(str: string, maxLines: number, maxLineLen: number) {
 }
 
 function createTemplate(title: string, description: string): string {
-    const [titleFirstLine, titleSecondLine] = breakText(title, 2, 35)
+    const [titleFirstLine, titleSecondLine] = breakText(title, 2, 30)
 
     const [descriptionFirstLine, descriptionSecondLine, descriptionThirdLine] = breakText(description, 3, 40)
 
