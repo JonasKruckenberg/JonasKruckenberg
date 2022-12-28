@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Giscus from "@giscus/svelte";
 
 export interface Props {
 	content: {
@@ -21,23 +22,6 @@ const {
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<script
-			src="https://giscus.app/client.js"
-			data-repo="JonasKruckenberg/JonasKruckenberg"
-			data-repo-id="MDEwOlJlcG9zaXRvcnkzMDczMDE3MzU="
-			data-category="Blog"
-			data-category-id="DIC_kwDOElENZ84CTS3r"
-			data-mapping="title"
-			data-strict="0"
-			data-reactions-enabled="1"
-			data-emit-metadata="0"
-			data-input-position="top"
-			data-theme="dark"
-			data-lang="en"
-			data-loading="lazy"
-			crossorigin="anonymous"
-			async
-		></script>
 		<style>
 			.title {
 				font-size: 3em;
@@ -83,7 +67,23 @@ const {
 				<slot />
 			</article>
 			<aside>
-				<div class="giscus"></div>
+				<Giscus
+					client:visible
+					client:only="svelte"
+					repo="JonasKruckenberg/JonasKruckenberg"
+					repo-id="MDEwOlJlcG9zaXRvcnkzMDczMDE3MzU="
+					category="Blog"
+					category-id="DIC_kwDOElENZ84CTS3r"
+					mapping="title"
+					strict="0"
+					reactions-enabled="1"
+					emit-metadata="0"
+					input-position="top"
+					theme="dark"
+					lang="en"
+					loading="lazy"
+					async
+				/>
 			</aside>
 		</main>
 		<Footer />
