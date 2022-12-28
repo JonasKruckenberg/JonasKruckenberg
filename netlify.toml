@@ -14,11 +14,6 @@ from = "/*"
 to = "/index.html"
 status = 200
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; style-src: 'unsafe-inline'"
-
 [build.environment]
   NPM_FLAGS = "--version" # prevent Netlify npm install
 [build]
