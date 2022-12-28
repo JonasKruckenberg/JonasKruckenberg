@@ -14,7 +14,7 @@
             reactions-enabled="1"
             emit-metadata="0"
             input-position="top"
-            theme="dark"
+            theme="transparent_dark"
             lang="en"
             loading="lazy"
             async
