@@ -13,7 +13,7 @@
         strict="1"
         reactionsEnabled="1"
         emitMetadata="0"
-        inputPosition="top"
+        inputPosition="bottom"
         theme="dark"
         lang="en"
         loading="lazy"
