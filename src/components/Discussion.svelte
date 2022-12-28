@@ -24,7 +24,7 @@
 
 <style>
     div {
-        /* We must set a min-height so that astro's client:visible directive can actually recognize or component */
-        min-height: 3rem;
+        margin-top: 15vh;
+        margin-bottom: 10vh;
     }
 </style>
