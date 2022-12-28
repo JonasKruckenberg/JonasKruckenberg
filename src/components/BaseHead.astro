@@ -13,7 +13,7 @@ export interface Props {
 const { title, description} = Astro.props;
 
 
-const socialImage = new URL(`/social-image${Astro.url.pathname.endsWith('/') ? Astro.url.pathname + 'index' : Astro.url.pathname}.png`, Astro.url);
+const socialImage = new URL(`/social-image${Astro.url.pathname == '/' ? 'index' : Astro.url.pathname}.png`, Astro.url);
 ---
 
 <!-- Global Metadata -->
