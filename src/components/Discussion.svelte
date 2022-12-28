@@ -24,7 +24,7 @@
 
 <style>
     div {
-        margin-top: 15vh;
-        margin-bottom: 10vh;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
     }
 </style>
