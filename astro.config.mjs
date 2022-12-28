@@ -8,7 +8,7 @@ import fs from 'fs'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jonaskruckenberg.de',
-  integrations: [svelte(), sitemap(), critters(), compress()],
+  integrations: [svelte(), sitemap(), /* critters(), */ compress()],
   markdown: {
     shikiConfig: {
       theme: JSON.parse(fs.readFileSync('./code-theme.json', 'utf-8'))
