@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Giscus from "@giscus/svelte";
+import Discussion from "../components/Discussion.svelte";
 
 export interface Props {
 	content: {
@@ -66,16 +66,16 @@ const {
 				<hr />
 				<slot />
 			</article>
-			<aside>
-				<Giscus
-					client:visible
-					client:only="svelte"
+			<aside >
+				<Discussion client:visible/>
+				<!-- client:visible -->
+				<!-- <Giscus
 					repo="JonasKruckenberg/JonasKruckenberg"
 					repo-id="MDEwOlJlcG9zaXRvcnkzMDczMDE3MzU="
 					category="Blog"
 					category-id="DIC_kwDOElENZ84CTS3r"
 					mapping="title"
-					strict="0"
+					strict="1"
 					reactions-enabled="1"
 					emit-metadata="0"
 					input-position="top"
@@ -83,7 +83,7 @@ const {
 					lang="en"
 					loading="lazy"
 					async
-				/>
+				/> -->
 			</aside>
 		</main>
 		<Footer />
