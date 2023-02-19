@@ -19,9 +19,3 @@ status = 200
 [build]
   command = 'npx pnpm install --store=node_modules/.pnpm-store && npm run build'
   publish = 'dist'
-
-[[headers]]
-  for = "/rss.xml"
-  [headers.values]
-    Content-Type = "application/xml; charset=utf-8"
-    x-content-type-options = "nosniff"

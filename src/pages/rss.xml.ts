@@ -19,7 +19,6 @@ export const get = async () => {
 	}))	
 
 	return rss({
-		stylesheet: '/rss.xsl',
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
 		site: import.meta.env.SITE,
