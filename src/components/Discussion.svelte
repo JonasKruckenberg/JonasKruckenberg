@@ -14,7 +14,7 @@
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="bottom"
-        theme="dark"
+        theme="transparent_dark"
         lang="en"
         loading="lazy"
         />
