@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
@@ -6,29 +8,27 @@
 }
 
 :root {
-  --dark-red: #bc3e45;
-  --red: #d14b3b;
-  --orange: #c45f2c;
-  --yellow: #dd9e3d;
-  --bright-yellow: #e6c145;
-  --black: #160b06;
+  --dark-red: #bb3e45;
+  --red: #d14c3d;
+  --orange: #c35f2c;
+  --yellow: #dd9c3c;
+  --bright-yellow: #e6c147;
+  --black: #140a05;
   --white: #fefefb;
 }
 
 html {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
-    arial, sans-serif;
+  font-family: $font-sans;
 
-  background-color: var(--black);
-  color: var(--white);
+  background-color: $black;
+  color: $white;
 }
 
 a {
-  color: var(--white);
+  background-color: transparent;
+  color: $white;
   text-decoration: none;
-  border-bottom: 3px solid var(--bright-yellow);
-  /* text-decoration-color: var(--bright-yellow); */
+  border-bottom: 3px solid $bright-yellow;
 }
 
 main,
@@ -38,40 +38,9 @@ footer {
   max-width: 70vw;
 }
 
-pre {
-  padding: 1rem;
-}
-
-code {
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
-}
-
 @media (max-width: 700px) {
   main {
     margin: 0;
     max-width: 100vw;
   }
-}
-
-/* Hide elements visually but keep them in the accessibility tree */
-.visually-hidden {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-  clip: rect(1px,
-      1px,
-      1px,
-      1px);
-  /*maybe deprecated but we need to support legacy browsers */
-  clip-path: inset(50%);
-  /*modern browsers, clip-path works inwards from each corner*/
-  white-space: nowrap;
-  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }

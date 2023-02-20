@@ -2,7 +2,6 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.scss";
-// import { generateImage } from './social-image'
 
 export interface Props {
 	title: string;
@@ -66,3 +65,6 @@ const socialImage = new URL(
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={socialImage} />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed">
