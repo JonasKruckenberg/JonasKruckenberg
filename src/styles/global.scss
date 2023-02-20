@@ -12,23 +12,23 @@ $font-sans: "Open Sans", -apple-system, BlinkMacSystemFont, avenir next,
   arial, sans-serif;
 $font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
   monospace;
-$dark-red: hsl(357, 50%, 49%);
-$red: hsl(6, 62%, 53%);
-$orange: hsl(20, 63%, 47%);
-$yellow: hsl(36, 70%, 55%);
-$bright-yellow: hsl(46, 76%, 59%);
-$black: hsl(19, 57%, 5%);
-$white: hsl(60, 60%, 99%);
-$code-bg: hsl(20, 6%, 10%);
+$dark-red: #bb3e45;
+$red: #d14c3d;
+$orange: #c35f2c;
+$yellow: #020101;
+$bright-yellow: #e6c147;
+$black: #140a05;
+$white: #fefefb;
+$code-bg: #1b1918;
 
 :root {
-  --dark-red: hsl(357, 50%, 49%);
-  --red: hsl(6, 62%, 53%);
-  --orange: hsl(20, 63%, 47%);
-  --yellow: hsl(36, 70%, 55%);
-  --bright-yellow: hsl(46, 76%, 59%);
-  --black: hsl(19, 57%, 5%);
-  --white: hsl(60, 60%, 99%);
+  --dark-red: #bb3e45;
+  --red: #d14c3d;
+  --orange: #c35f2c;
+  --yellow: #dd9c3c;
+  --bright-yellow: #e6c147;
+  --black: #140a05;
+  --white: #fefefb;
 }
 
 html {
