@@ -19,11 +19,14 @@ export interface Props {
 const {
 	content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
+
+const includesKatex = Astro.props.compiledContent().includes('class="math math-display"')
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		{includesKatex && <link rel="stylesheet" href="/katex/katex.min.css" crossorigin="anonymous">}
 		<style>
 			.title {
 				font-size: 3em;
