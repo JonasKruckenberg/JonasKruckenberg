@@ -16,7 +16,15 @@ const blogPosts = Object.fromEntries(Object.entries(import.meta.glob("../blog/*.
 }))
 
 export async function getStaticPaths() {
-    const paths = [...Object.keys(blogPosts), 'index', 'blog']
+    const paths = ['index', 'blog']
+
+    for (const [path, getInfo] of Object.entries(blogPosts)) {
+        const info = await getInfo() as Record<string, any>
+
+        if (!info.frontmatter.draft) {
+            paths.push(path)
+        }
+    }
 
     return paths.map(path => ({ params: { path } }));
 }
