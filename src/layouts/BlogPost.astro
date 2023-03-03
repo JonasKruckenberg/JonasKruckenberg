@@ -1,8 +1,6 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import Discussion from "../components/Discussion.svelte";
+import BaseLayout from "./BaseLayout.astro";
 
 // import "../styles/markdown.scss";
 
@@ -25,70 +23,58 @@ const includesKatex = Astro.props
 	.includes('class="math math-display"');
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
+<BaseLayout title={title} description={description}>
+	{
+		includesKatex && (
+			<link
+				rel="stylesheet"
+				href="/katex/katex.min.css"
+				crossorigin="anonymous"
+				slot="head"
+			/>
+		)
+	}
+
+	<article>
+		{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+		<h1 class="title">{title}</h1>
+		{pubDate && <time>{pubDate}</time>}
 		{
-			includesKatex && (
-				<link
-					rel="stylesheet"
-					href="/katex/katex.min.css"
-					crossorigin="anonymous"
-				/>
+			updatedDate && (
+				<div>
+					Last updated on <time>{updatedDate}</time>
+				</div>
 			)
 		}
+		<hr />
+		<slot />
+	</article>
+	<aside>
+		<Discussion client:visible />
+	</aside>
+</BaseLayout>
 
-		<style lang="scss" is:global>
-			p {
-				margin-bottom: 2rem;
-			}
-		</style>
+<style lang="scss" is:global>
+	p {
+		margin-bottom: 2rem;
+	}
+</style>
 
-		<style lang="scss">
-			@use "../styles/variables" as *;
+<style lang="scss">
+	@use "../styles/variables" as *;
 
-			.title {
-				font-size: 3em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 2px solid $white;
-				margin: 1rem 0;
-			}
-			time {
-				opacity: 0.6;
-			}
-			article {
-				font-size: 1.1em;
-			}
-		</style>
-	</head>
-
-	<body>
-		<Header />
-		<main>
-			<article>
-				{
-					heroImage && (
-						<img width={720} height={360} src={heroImage} alt="" />
-					)
-				}
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{
-					updatedDate && (
-						<div>
-							Last updated on <time>{updatedDate}</time>
-						</div>
-					)
-				}
-				<hr />
-				<slot />
-			</article>
-			<aside>
-				<Discussion client:visible />
-			</aside>
-		</main>
-		<Footer />
-	</body>
-</html>
+	.title {
+		font-size: 3em;
+		margin: 0.25em 0 0;
+	}
+	hr {
+		border-top: 2px solid $white;
+		margin: 1rem 0;
+	}
+	time {
+		opacity: 0.6;
+	}
+	article {
+		font-size: 1.1em;
+	}
+</style>
