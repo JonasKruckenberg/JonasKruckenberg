@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Discussion from "../components/Discussion.svelte";
 
-import "../styles/markdown.scss";
+// import "../styles/markdown.scss";
 
 export interface Props {
 	content: {
@@ -20,20 +20,39 @@ const {
 	content: { title, description, pubDate, updatedDate, heroImage },
 } = Astro.props;
 
-const includesKatex = Astro.props.compiledContent().includes('class="math math-display"')
+const includesKatex = Astro.props
+	.compiledContent()
+	.includes('class="math math-display"');
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		{includesKatex && <link rel="stylesheet" href="/katex/katex.min.css" crossorigin="anonymous">}
-		<style>
+		{
+			includesKatex && (
+				<link
+					rel="stylesheet"
+					href="/katex/katex.min.css"
+					crossorigin="anonymous"
+				/>
+			)
+		}
+
+		<style lang="scss" is:global>
+			p {
+				margin-bottom: 2rem;
+			}
+		</style>
+
+		<style lang="scss">
+			@use "../styles/variables" as *;
+
 			.title {
 				font-size: 3em;
 				margin: 0.25em 0 0;
 			}
 			hr {
-				border-top: 2px solid var(--white);
+				border-top: 2px solid $white;
 				margin: 1rem 0;
 			}
 			time {
@@ -41,11 +60,6 @@ const includesKatex = Astro.props.compiledContent().includes('class="math math-d
 			}
 			article {
 				font-size: 1.1em;
-			}
-		</style>
-		<style is:global>
-			p {
-				margin-bottom: 2rem;
 			}
 		</style>
 	</head>
@@ -71,8 +85,8 @@ const includesKatex = Astro.props.compiledContent().includes('class="math math-d
 				<hr />
 				<slot />
 			</article>
-			<aside >
-				<Discussion client:visible/>
+			<aside>
+				<Discussion client:visible />
 			</aside>
 		</main>
 		<Footer />
