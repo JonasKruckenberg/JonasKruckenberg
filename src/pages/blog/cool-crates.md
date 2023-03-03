@@ -3,6 +3,7 @@ layout: "../../layouts/BlogPost.astro"
 title: "Cool crates I like"
 description: ""
 pubDate: "Feb 04 2023"
+draft: true
 ---
 
 ## `static-rc`
