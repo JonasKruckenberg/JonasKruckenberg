@@ -469,7 +469,8 @@ article tt {
     margin: 0;
     font-size: 85%;
     white-space: break-spaces;
-    background-color: $code-bg;
+    // lighten the background for inline code juuust a bit to make it stand out more
+    background-color: lighten(grayscale($code-bg), 5%); 
     border-radius: 6px;
 }
 
