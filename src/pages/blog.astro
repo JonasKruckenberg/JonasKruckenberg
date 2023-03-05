@@ -58,6 +58,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}"))
         </li>
       ))
     }
+    {!posts.length && <p>Oh no! Seems like I haven't written any posts yet :/</p>}
   </ul>
 </BaseLayout>
 
