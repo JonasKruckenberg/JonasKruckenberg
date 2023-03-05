@@ -19,5 +19,10 @@ export default defineConfig({
     shikiConfig: {
       theme: JSON.parse(fs.readFileSync('./code-theme.json', 'utf-8'))
     }
+  },
+  vite: {
+    server: {
+      strictPort: true,
+    },
   }
 });

@@ -1,5 +1,3 @@
-// import { existsSync, mkdirSync } from 'fs';
-// import { createHash } from 'crypto';
 import { createRequire } from 'module';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../config'
 
