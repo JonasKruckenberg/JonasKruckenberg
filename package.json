@@ -21,6 +21,7 @@
   "devDependencies": {
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.1",
+    "@types/sanitize-html": "^2.8.1",
     "rehype-katex": "^6.0.2",
     "remark-math": "^5.1.1",
     "sanitize-html": "^2.10.0",

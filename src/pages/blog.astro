@@ -1,68 +1,92 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { calculateReadingTime } from "../lib/reading-time";
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob("./blog/*.{md,mdx}"))
-  .filter((post) => !post.frontmatter.draft)
+  .filter((post) => import.meta.env.DEV || !post.frontmatter.draft)
   .sort(
-  (a, b) =>
-    new Date(b.frontmatter.pubDate).valueOf() -
-    new Date(a.frontmatter.pubDate).valueOf()
-);
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  );
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <style>
-      ul {
-        list-style-type: none;
-        padding: unset;
-      }
-      ul li h3 {
-        font-size: 2em;
-        /* line-height: 1.3em; */
-        font-weight: 700;
-      }
-      ul li time {
-        color: #595959;
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
-    <main>
-      <section>
-        <ul>
-          {
-            posts.map((post) => (
-              <li>
-                <h3>
-                  <a href={post.url}>{post.frontmatter.title}</a>
-                </h3>
-                <time datetime={post.frontmatter.pubDate}>
-                  {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                    "en-us",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
-                <p>{post.frontmatter.description}</p>
-                <br />
-                <a href={post.url}>Read more...</a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
+<BaseLayout>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <h3>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </h3>
+          <div class="row">
+            <time datetime={post.frontmatter.pubDate}>
+              {new Date(post.frontmatter.pubDate).toLocaleDateString("en-us", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })}
+            </time>
+            <span>
+              {calculateReadingTime(post.compiledContent())} minute read
+            </span>
+            {post.frontmatter.draft && (
+              <div class="draft-badge">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M24 30a6 6 0 1 1 6-6a6.007 6.007 0 0 1-6 6zm0-10a4 4 0 1 0 4 4a4.005 4.005 0 0 0-4-4zM8 22h8v2H8zm0-6h10v2H8z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M16 28H6V4h8v6a2.006 2.006 0 0 0 2 2h6v3h2v-5a.91.91 0 0 0-.3-.7l-7-7A.909.909 0 0 0 16 2H6a2.006 2.006 0 0 0-2 2v24a2.006 2.006 0 0 0 2 2h10Zm0-23.6l5.6 5.6H16Z"
+                  />
+                </svg>
+                draft
+              </div>
+            )}
+          </div>
+          <p>{post.frontmatter.description}</p>
+          <br />
+          <a href={post.url}>Read more...</a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>
+
+<style lang="scss">
+  ul {
+    list-style-type: none;
+    padding: unset;
+  }
+  ul li h3 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  ul li time {
+    color: #595959;
+  }
+  .row {
+    display: flex;
+    gap: 1em;
+  }
+  .draft-badge {
+    display: inline;
+    background-color: lightblue;
+    border-radius: 1rem;
+    padding: 0.2rem 0.7rem;
+    svg {
+      vertical-align: sub;
+      fill: currentcolor;
+      height: 20px;
+      width: 20px;
+    }
+  }
+</style>
