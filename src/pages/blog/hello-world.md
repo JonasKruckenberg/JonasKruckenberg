@@ -1,9 +1,8 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "And this house just ain't no home"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Dec 09 2022"
-# heroImage: "/placeholder-hero.jpg"
+title: "Test Page"
+description: "Markdown styling test page"
+heroImage: "/src/assets/pexels-elina-sazonova-2072600.jpg"
 draft: true
 ---
 
@@ -542,7 +541,6 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
 
 ## Plugins
 

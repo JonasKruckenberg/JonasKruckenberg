@@ -1,16 +1,17 @@
 import { defineConfig } from 'astro/config';
-import svelte from '@astrojs/svelte'
+import svelte from '@astrojs/svelte';
 import sitemap from '@astrojs/sitemap';
 import compress from "astro-compress";
 import critters from "astro-critters";
-import fs from 'fs'
+import fs from 'fs';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { astroImageTools } from 'astro-imagetools';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://jonaskruckenberg.de',
-  integrations: [svelte(), sitemap(), critters(), compress()],
+  integrations: [svelte(), sitemap(), astroImageTools, critters() /*compress()*/],
   markdown: {
     extendDefaultPlugins: true,
     gfm: true,
@@ -22,7 +23,7 @@ export default defineConfig({
   },
   vite: {
     server: {
-      strictPort: true,
-    },
+      strictPort: true
+    }
   }
 });

@@ -1,0 +1,25 @@
+---
+import Date from "./Date.astro";
+import { lastUpdateDate } from "../lib/dates";
+
+const lastUpdated = await lastUpdateDate(`src/pages${Astro.url.pathname}.md`)
+
+const historyUrl = `https://github.com/JonasKruckenberg/JonasKruckenberg/commits/main/src/pages${Astro.url.pathname}.md`
+---
+
+{
+    lastUpdated && (
+        <a href={historyUrl} title="See revision history">
+            <span>Last updated</span>
+            <Date date={lastUpdated} />
+        </a>
+    )
+}
+
+<style lang="scss">
+    a {
+        grid-area: updated;
+        opacity: 0.6;
+        border: none;
+    }
+</style>

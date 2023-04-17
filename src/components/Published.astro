@@ -1,0 +1,22 @@
+---
+import Date from "./Date.astro";
+import { pubDate } from "../lib/dates";
+
+const published = await pubDate(`src/pages${Astro.url.pathname}.md`)
+---
+
+{
+    published && (
+        <span class="date">
+            <span>Published</span>
+            <Date date={published} />
+        </span>
+    )
+}
+
+<style lang="scss">
+    .date {
+        grid-area: published;
+        opacity: 0.6;
+    }
+</style>
