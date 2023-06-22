@@ -16,7 +16,7 @@
     "astro": "^2.0.0",
     "astro-compress": "^1.1.33",
     "astro-critters": "^1.1.29",
-    "svelte": "^3.55.1"
+    "svelte": "^4.0.0"
   },
   "devDependencies": {
     "@astrojs/rss": "^2.0.0",
