@@ -14,7 +14,7 @@
     "@astrojs/svelte": "^2.0.0",
     "@giscus/svelte": "^2.2.6",
     "astro": "^2.0.0",
-    "astro-compress": "^1.1.33",
+    "astro-compress": "^2.0.0",
     "astro-critters": "^1.1.29",
     "svelte": "^3.55.1"
   },
