@@ -24,7 +24,7 @@
     "@types/sanitize-html": "^2.8.1",
     "astro-imagetools": "^0.8.1",
     "file-type": "^18.2.1",
-    "find-cache-dir": "^4.0.0",
+    "find-cache-dir": "^5.0.0",
     "isomorphic-git": "^1.23.0",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
