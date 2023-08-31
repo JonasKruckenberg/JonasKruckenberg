@@ -19,7 +19,7 @@
     "svelte": "^3.55.1"
   },
   "devDependencies": {
-    "@astrojs/rss": "^2.0.0",
+    "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^1.0.1",
     "@types/sanitize-html": "^2.8.1",
     "astro-imagetools": "^0.8.1",
