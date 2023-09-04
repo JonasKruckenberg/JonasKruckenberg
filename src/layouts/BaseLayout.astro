@@ -3,9 +3,10 @@ export interface Props {
     title?: string;
     description?: string;
     image?: string;
+    isIndex?: boolean;
 }
 
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+const { title = SITE_TITLE, description = SITE_DESCRIPTION, isIndex = false } = Astro.props;
 
 // Import the global.css file here so that it is included on
 // all pages.
@@ -157,6 +158,6 @@ const socialImage = new URL(
         <main>
             <slot />
         </main>
-        <Footer />
+        <Footer large={isIndex}/>
     </body>
 </html>

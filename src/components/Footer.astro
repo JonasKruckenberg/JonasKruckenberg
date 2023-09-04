@@ -1,7 +1,18 @@
-<footer>
+---
+
+export interface Props {
+    large?: boolean;
+}
+
+const { large = false } = Astro.props;
+---
+
+<footer class:list={[{ large }]}>
     <h3>Jonas Kruckenberg</h3>
 
     <p>DevRel at <a href="https://crabnebula.dev">CrabNebula</a>. Member of the <a href="https://tauri.app">Tauri</a> Team.</p>
+    <p>I teach Rust and do research into Local-First, User Interfaces and how to shape a better digital tomorrow!</p>
+    <p>If you would like to stay up-to-date with my latest projects, ideas, writings and news from the Local-First community, feel free to sign up to my (monthly-or-so) newsletter below!</p>
 
     <div class="socials">
         <a href="https://github.com/JonasKruckenberg">
@@ -54,25 +65,35 @@
 </footer>
 <style lang="scss">
     @use "../styles/variables" as *;
-    
-    h3 {
-        font-size: 2em;
-    }
-    .socials {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(2em, min-content));
-        gap: 2em;
-        margin-block-start: 2em;
-        margin-block-end: 2em;
-
-        a {
-            border: none;
+    footer {
+        h3 {
+            font-size: 2em;
         }
-    }
-    p {
-        font-size: 1.2rem;
-    }
-    .fill-black {
-        fill: $black
+        p {
+            font-size: 1.2em;
+        }
+
+        &.large {
+            font-size: 1.3rem;
+
+            h3 {
+                font-size: 4.3em;
+            }
+        }
+
+        .socials {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(2em, min-content));
+            gap: 2em;
+            margin-block-start: 2em;
+            margin-block-end: 2em;
+
+            a {
+                border: none;
+            }
+        }
+        .fill-black {
+            fill: $black
+        }
     }
 </style>
