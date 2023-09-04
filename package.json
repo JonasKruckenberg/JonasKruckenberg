@@ -11,27 +11,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^2.0.0",
-    "@giscus/svelte": "^2.2.6",
-    "astro": "^2.0.0",
-    "astro-compress": "^1.1.33",
-    "astro-critters": "^1.1.29",
-    "svelte": "^3.55.1"
+    "@astrojs/svelte": "^4.0.0",
+    "@giscus/svelte": "^2.3.0",
+    "astro": "^3.0.8",
+    "astro-compress": "^2.0.15",
+    "astro-critters": "^2.0.11",
+    "svelte": "^4.2.0"
   },
   "devDependencies": {
-    "@astrojs/rss": "^2.0.0",
-    "@astrojs/sitemap": "^1.0.1",
-    "@types/sanitize-html": "^2.8.1",
-    "astro-imagetools": "^0.8.1",
-    "file-type": "^18.2.1",
-    "find-cache-dir": "^4.0.0",
-    "isomorphic-git": "^1.23.0",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "@types/sanitize-html": "^2.9.0",
+    "astro-imagetools": "^0.9.0",
+    "file-type": "^18.5.0",
+    "find-cache-dir": "^5.0.0",
+    "isomorphic-git": "^1.24.5",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
-    "rehype-katex": "^6.0.2",
+    "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
-    "sanitize-html": "^2.10.0",
-    "sass": "^1.58.3",
-    "sharp": "^0.31.3"
+    "sanitize-html": "^2.11.0",
+    "sass": "^1.66.1",
+    "sharp": "^0.32.5"
   }
 }
