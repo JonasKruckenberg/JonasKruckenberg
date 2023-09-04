@@ -1,4 +1,5 @@
 ---
+import NewsletterSignup from "../components/NewsletterSignup.astro";
 
 export interface Props {
     large?: boolean;
@@ -12,7 +13,8 @@ const { large = false } = Astro.props;
 
     <p>DevRel at <a href="https://crabnebula.dev">CrabNebula</a>. Member of the <a href="https://tauri.app">Tauri</a> Team.</p>
     <p>I teach Rust and do research into Local-First, User Interfaces and how to shape a better digital tomorrow!</p>
-    <p>If you would like to stay up-to-date with my latest projects, ideas, writings and news from the Local-First community, feel free to sign up to my (monthly-or-so) newsletter below!</p>
+
+    <NewsletterSignup />
 
     <div class="socials">
         <a href="https://github.com/JonasKruckenberg">
@@ -65,6 +67,7 @@ const { large = false } = Astro.props;
 </footer>
 <style lang="scss">
     @use "../styles/variables" as *;
+
     footer {
         h3 {
             font-size: 2em;

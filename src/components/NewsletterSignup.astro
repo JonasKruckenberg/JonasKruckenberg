@@ -1,0 +1,45 @@
+<p style="grid-area: info">
+If you would like to stay up-to-date with my latest projects, ideas, writings and news from the Local-First community, feel free to sign up to my (monthly-or-so) newsletter below!
+</p>
+
+<form name="newsletter" method="POST" data-netlify="true">
+    <!-- <label>Email:</label> -->
+    <input type="email" name="email"/>
+    <button type="submit">Sign me up!</button>
+</form>
+
+<style lang="scss">
+p {
+    font-size: 1.2em;
+}
+form {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    label {
+        font-size: 1.2em;
+    }
+
+    input {
+        color: white;
+        background-color: transparent;
+        border: 1px solid #30363d;
+        border-radius: .25rem;
+        font-size: 1em;
+        line-height: 1.75em;
+        height: 100%;
+        padding: .2em .5em;
+    }
+
+    button {
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: .25rem;
+        font-size: 1em;
+        padding: .5em .75em;
+        background: linear-gradient(127deg, rgba(188, 62, 69, 1), rgba(209, 75, 59, 1) 43%, rgba(230, 193, 69, 1));
+    }
+}
+</style>
