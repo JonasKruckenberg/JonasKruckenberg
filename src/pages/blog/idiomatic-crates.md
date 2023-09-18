@@ -49,6 +49,7 @@ impl BeachBytes {
     }
 }
 ```
+
 <br />
 
 **This is great!** It means less worrying about naming for me, less reading docs and trying to figure out what does what for my users, and an easier time understanding my codebase for possible contributors!
