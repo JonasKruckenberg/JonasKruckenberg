@@ -6,7 +6,7 @@ heroImage: "/src/assets/clyde_abq.jpg"
 draft: false
 ---
 
-_As I'm writing this I am sitting in the lobby of the Clyde Hotel in Albuquerque, New Mexico in the days after [RustConf 2023](https://rustconf.com). This is a writeup of one of the many great conversations I had there._
+_As I'm writing this I am sitting in the lobby of the Clyde Hotel in Albuquerque, New Mexico in the days after [RustConf 2023](https://rustconf.com). This writeup is the resulrt of the many great conversations I had there._
 
 <br />
 
