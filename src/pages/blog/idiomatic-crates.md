@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "ABQ Notes: Towards an Idiomatic Ecosystem"
-description: "What does it mean for a crate to be idiomatic?"
+title: "ABQ Notes I: Towards an Idiomatic Ecosystem"
+description: "What does it mean for a whole crate to be idiomatic? A letter to the Rust community."
 heroImage: "/src/assets/clyde_abq.jpg"
 draft: false
 ---
