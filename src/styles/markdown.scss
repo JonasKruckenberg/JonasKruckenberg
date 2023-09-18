@@ -470,7 +470,7 @@ article tt {
     font-size: 85%;
     white-space: break-spaces;
     // lighten the background for inline code juuust a bit to make it stand out more
-    background-color: lighten(grayscale($code-bg), 5%); 
+    background-color: lighten(grayscale($code-bg), 5%);
     border-radius: 6px;
 }
 
@@ -524,7 +524,7 @@ article [data-footnote-ref]::after {
 article .footnotes {
     font-size: 12px;
     color: grayscale(darken($white, 15%));
-    border-top: 1px solid $white;
+    margin-block-start: 4em;
 }
 
 article .footnotes ol {
