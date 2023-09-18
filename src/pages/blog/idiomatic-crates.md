@@ -44,7 +44,7 @@ impl BeachBytes {
         // impl
     }
 
-    pub fn into_json(&self) -> serde_json::Value {
+    pub fn into_json(self) -> serde_json::Value {
         // impl
     }
 }
