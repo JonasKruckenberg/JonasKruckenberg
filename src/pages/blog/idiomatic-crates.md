@@ -17,6 +17,8 @@ Why is it so important that your code is predictable, you ask?
 Consider a crate I just made up: `beach-bytes` (it's [`bytes`](https://crates.io/bytes) but more handsome) that's essentially a fancy `Vec<u8>`. I want to support converting my crates' primary type `BeachBytes` into various other types.
 But how do I expose these conversions to people consuming my crate? A function called `convert(format)` that I tell which format I want?
 
+<br />
+
 ```rust
 // like this???
 impl BeachBytes {
@@ -28,9 +30,12 @@ impl BeachBytes {
     }
 }
 ```
+
 <br />
 
 Luckily, there exists a convention here [^1]: `as_` indicates a free or very cheap conversion - often just casting a pointer or returning a reference to some inner value - while `to_` signifies an expensive conversion, and `into_` means the function operates on owned values.
+
+<br />
 
 ```rust
 // like this!
