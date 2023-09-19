@@ -28,7 +28,7 @@
     "isomorphic-git": "^1.24.5",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
-    "rehype-katex": "^6.0.3",
+    "rehype-katex": "^7.0.0",
     "remark-math": "^5.1.1",
     "sanitize-html": "^2.11.0",
     "sass": "^1.66.1",
