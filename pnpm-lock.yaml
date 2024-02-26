@@ -39,7 +39,7 @@ devDependencies:
     version: 0.9.0(astro@3.6.4)
   file-type:
     specifier: ^18.5.0
-    version: 18.5.0
+    version: 18.7.0
   find-cache-dir:
     specifier: ^5.0.0
     version: 5.0.0
@@ -2711,8 +2711,8 @@ packages:
       token-types: 5.0.1
     dev: true
 
-  /file-type@18.5.0:
-    resolution: {integrity: sha512-yvpl5U868+V6PqXHMmsESpg6unQ5GfnPssl4dxdJudBrr9qy7Fddt7EVX1VLlddFfe8Gj9N7goCZH22FXuSQXQ==}
+  /file-type@18.7.0:
+    resolution: {integrity: sha512-ihHtXRzXEziMrQ56VSgU7wkxh55iNchFkosu7Y9/S+tXHdKyrGjVK0ujbqNnsxzea+78MaLhN6PGmfYSAv1ACw==}
     engines: {node: '>=14.16'}
     dependencies:
       readable-web-to-node-stream: 3.0.2
