@@ -13,7 +13,7 @@ dependencies:
     version: 2.4.0(svelte@4.2.12)
   astro:
     specifier: ^3.0.8
-    version: 3.6.5(sass@1.71.1)(typescript@5.4.2)
+    version: 3.6.5(sass@1.72.0)(typescript@5.4.2)
   astro-compress:
     specifier: ^2.0.15
     version: 2.2.14
@@ -63,7 +63,7 @@ devDependencies:
     version: 2.12.1
   sass:
     specifier: ^1.66.1
-    version: 1.71.1
+    version: 1.72.0
   sharp:
     specifier: ^0.33.0
     version: 0.33.2
@@ -97,7 +97,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.6.5(sass@1.71.1)(typescript@5.4.2)
+      astro: 3.6.5(sass@1.72.0)(typescript@5.4.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -142,7 +142,7 @@ packages:
       svelte: ^3.55.0 || ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@4.2.12)(vite@4.5.2)
-      astro: 3.6.5(sass@1.71.1)(typescript@5.4.2)
+      astro: 3.6.5(sass@1.72.0)(typescript@5.4.2)
       svelte: 4.2.12
       svelte2tsx: 0.6.27(svelte@4.2.12)(typescript@5.4.2)
     transitivePeerDependencies:
@@ -1583,7 +1583,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@4.2.12)(vite@4.5.2)
       debug: 4.3.4
       svelte: 4.2.12
-      vite: 4.5.2(sass@1.71.1)
+      vite: 4.5.2(sass@1.72.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1602,7 +1602,7 @@ packages:
       magic-string: 0.30.7
       svelte: 4.2.12
       svelte-hmr: 0.15.3(svelte@4.2.12)
-      vite: 4.5.2(sass@1.71.1)
+      vite: 4.5.2(sass@1.72.0)
       vitefu: 0.2.5(vite@4.5.2)
     transitivePeerDependencies:
       - supports-color
@@ -1861,7 +1861,7 @@ packages:
       astro: '>=0.26 || >=1.0.0-beta'
     dependencies:
       '@astropub/codecs': 0.4.4
-      astro: 3.6.5(sass@1.71.1)(typescript@5.4.2)
+      astro: 3.6.5(sass@1.72.0)(typescript@5.4.2)
       file-type: 17.1.1
       find-cache-dir: 3.3.2
       find-up: 6.3.0
@@ -1871,7 +1871,7 @@ packages:
       imagetools-core: 3.0.2
     dev: true
 
-  /astro@3.6.5(sass@1.71.1)(typescript@5.4.2):
+  /astro@3.6.5(sass@1.72.0)(typescript@5.4.2):
     resolution: {integrity: sha512-fyVubQfb6+Bc2/XigXNeJ06HHwNFB9EnAQohJcrja6RB1PhIcZRusyIamywHWjoJ4a1T0HxMkzBLNW96DBqpNw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1929,7 +1929,7 @@ packages:
       tsconfck: 3.0.2(typescript@5.4.2)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.2(sass@1.71.1)
+      vite: 4.5.2(sass@1.72.0)
       vitefu: 0.2.5(vite@4.5.2)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -1974,8 +1974,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /bare-fs@2.2.1:
-    resolution: {integrity: sha512-+CjmZANQDFZWy4PGbVdmALIwmt33aJg8qTkVjClU6X4WmZkTPBDxRHiBn7fpqEWEfF3AC2io++erpViAIQbSjg==}
+  /bare-fs@2.2.2:
+    resolution: {integrity: sha512-X9IqgvyB0/VA5OZJyb5ZstoN62AzD7YxVGog13kkfYWYqJYcK0kcqLZ6TrmH5qr4/8//ejVcX4x/a0UvaogXmA==}
     requiresBuild: true
     dependencies:
       bare-events: 2.2.1
@@ -4678,8 +4678,8 @@ packages:
       postcss: 8.4.35
     dev: true
 
-  /sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -5055,7 +5055,7 @@ packages:
       pump: 3.0.0
       tar-stream: 3.1.7
     optionalDependencies:
-      bare-fs: 2.2.1
+      bare-fs: 2.2.2
       bare-path: 2.1.0
     optional: true
 
@@ -5409,7 +5409,7 @@ packages:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  /vite@4.5.2(sass@1.71.1):
+  /vite@4.5.2(sass@1.72.0):
     resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -5440,7 +5440,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.35
       rollup: 3.29.4
-      sass: 1.71.1
+      sass: 1.72.0
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -5452,7 +5452,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.2(sass@1.71.1)
+      vite: 4.5.2(sass@1.72.0)
 
   /vscode-oniguruma@1.7.0:
     resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
