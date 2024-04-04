@@ -7,16 +7,16 @@ settings:
 dependencies:
   '@astrojs/svelte':
     specifier: ^4.0.0
-    version: 4.0.4(astro@3.6.5)(svelte@4.2.12)(typescript@5.4.3)(vite@4.5.3)
+    version: 4.0.4(astro@3.6.5)(svelte@4.2.12)(typescript@5.4.4)(vite@4.5.3)
   '@giscus/svelte':
     specifier: ^2.3.0
     version: 2.4.0(svelte@4.2.12)
   astro:
     specifier: ^3.0.8
-    version: 3.6.5(sass@1.74.1)(typescript@5.4.3)
+    version: 3.6.5(sass@1.74.1)(typescript@5.4.4)
   astro-compress:
     specifier: ^2.0.15
-    version: 2.2.21(typescript@5.4.3)
+    version: 2.2.21(typescript@5.4.4)
   astro-critters:
     specifier: ^2.0.11
     version: 2.1.6
@@ -45,7 +45,7 @@ devDependencies:
     version: 5.0.0
   isomorphic-git:
     specifier: ^1.24.5
-    version: 1.25.6
+    version: 1.25.7
   object-hash:
     specifier: ^3.0.0
     version: 3.0.0
@@ -97,7 +97,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.6.5(sass@1.74.1)(typescript@5.4.3)
+      astro: 3.6.5(sass@1.74.1)(typescript@5.4.4)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -134,7 +134,7 @@ packages:
       zod: 3.22.4
     dev: true
 
-  /@astrojs/svelte@4.0.4(astro@3.6.5)(svelte@4.2.12)(typescript@5.4.3)(vite@4.5.3):
+  /@astrojs/svelte@4.0.4(astro@3.6.5)(svelte@4.2.12)(typescript@5.4.4)(vite@4.5.3):
     resolution: {integrity: sha512-7OIq3YWSq270TrJZhVNzGXB5+eCp1vyNS0+WcGixxtUSz8ciwO+PqZ6GIhvmEjbBPR0x0QS8t0p0B2qlKJu/EA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -142,9 +142,9 @@ packages:
       svelte: ^3.55.0 || ^4.0.0 || ^5.0.0-next.1
     dependencies:
       '@sveltejs/vite-plugin-svelte': 2.5.3(svelte@4.2.12)(vite@4.5.3)
-      astro: 3.6.5(sass@1.74.1)(typescript@5.4.3)
+      astro: 3.6.5(sass@1.74.1)(typescript@5.4.4)
       svelte: 4.2.12
-      svelte2tsx: 0.6.27(svelte@4.2.12)(typescript@5.4.3)
+      svelte2tsx: 0.6.27(svelte@4.2.12)(typescript@5.4.4)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -1365,14 +1365,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@playform/document@0.0.2(typescript@5.4.3):
+  /@playform/document@0.0.2(typescript@5.4.4):
     resolution: {integrity: sha512-dq3ZjyRTNv5ViT89bmE39Vf1diMdL5hXQMxoprnxRlQ07yXEFSerkjfJnthgJoCgwfqOSOOiT+lB1Apx2wLJQQ==}
     hasBin: true
     requiresBuild: true
     dependencies:
       commander: 12.0.0
       fast-glob: 3.3.2
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
       typedoc-plugin-keywords: 1.6.0(typedoc@0.25.12)
       typedoc-plugin-mdn-links: 3.1.19(typedoc@0.25.12)
       typedoc-plugin-merge-modules: 5.1.0(typedoc@0.25.12)
@@ -1384,14 +1384,14 @@ packages:
     dev: false
     optional: true
 
-  /@playform/file-pipe@0.0.2(typescript@5.4.3):
+  /@playform/file-pipe@0.0.2(typescript@5.4.4):
     resolution: {integrity: sha512-Lg+AboSNOecIInDrr+xEM2EAGUO7ibHPK8OufwwshoGdDlLvRF8LqkT8FXn+VVzpfOd7p15XvrFWdU/fDp3z7A==}
     dependencies:
       '@types/node': 20.12.2
       deepmerge-ts: 5.1.0
       fast-glob: 3.3.2
     optionalDependencies:
-      '@playform/document': 0.0.2(typescript@5.4.3)
+      '@playform/document': 0.0.2(typescript@5.4.4)
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -1658,10 +1658,10 @@ packages:
   /array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  /astro-compress@2.2.21(typescript@5.4.3):
+  /astro-compress@2.2.21(typescript@5.4.4):
     resolution: {integrity: sha512-gJcFyxX4spsGgIj41PtjISyirAOQ2DibGo8oz4N6gRdYjsIXw8aTMlm2huplAbQClENSyXvv1xfsCyyLmTG8Zw==}
     dependencies:
-      '@playform/file-pipe': 0.0.2(typescript@5.4.3)
+      '@playform/file-pipe': 0.0.2(typescript@5.4.4)
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       csso: 5.0.5
@@ -1672,7 +1672,7 @@ packages:
       svgo: 3.2.0
       terser: 5.30.0
     optionalDependencies:
-      '@playform/document': 0.0.2(typescript@5.4.3)
+      '@playform/document': 0.0.2(typescript@5.4.4)
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -1691,7 +1691,7 @@ packages:
       astro: '>=0.26 || >=1.0.0-beta'
     dependencies:
       '@astropub/codecs': 0.4.4
-      astro: 3.6.5(sass@1.74.1)(typescript@5.4.3)
+      astro: 3.6.5(sass@1.74.1)(typescript@5.4.4)
       file-type: 17.1.1
       find-cache-dir: 3.3.2
       find-up: 6.3.0
@@ -1701,7 +1701,7 @@ packages:
       imagetools-core: 3.0.2
     dev: true
 
-  /astro@3.6.5(sass@1.74.1)(typescript@5.4.3):
+  /astro@3.6.5(sass@1.74.1)(typescript@5.4.4):
     resolution: {integrity: sha512-fyVubQfb6+Bc2/XigXNeJ06HHwNFB9EnAQohJcrja6RB1PhIcZRusyIamywHWjoJ4a1T0HxMkzBLNW96DBqpNw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1756,7 +1756,7 @@ packages:
       shikiji: 0.6.13
       string-width: 6.1.0
       strip-ansi: 7.1.0
-      tsconfck: 3.0.2(typescript@5.4.3)
+      tsconfck: 3.0.2(typescript@5.4.4)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
       vite: 4.5.2(sass@1.74.1)
@@ -1811,7 +1811,7 @@ packages:
     requiresBuild: true
     dependencies:
       bare-events: 2.2.1
-      bare-path: 2.1.0
+      bare-path: 2.1.1
       streamx: 2.16.1
     optional: true
 
@@ -1820,8 +1820,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /bare-path@2.1.0:
-    resolution: {integrity: sha512-DIIg7ts8bdRKwJRJrUMy/PICEaQZaPGZ26lsSx9MJSwIhSrcdHn7/C8W+XmnG/rKi6BaRcz+JO00CjZteybDtw==}
+  /bare-path@2.1.1:
+    resolution: {integrity: sha512-OHM+iwRDRMDBsSW7kl3dO62JyHdBKO3B25FB9vNQBPcGHMo4+eA8Yj41Lfbk3pS/seDY+siNge0LdRTulAau/A==}
     requiresBuild: true
     dependencies:
       bare-os: 2.2.0
@@ -3018,8 +3018,8 @@ packages:
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  /isomorphic-git@1.25.6:
-    resolution: {integrity: sha512-zA3k3QOO7doqOnBgwsaXJwHKSIIl5saEdH4xxalu082WHVES4KghsG6RE2SDwjXMCIlNa1bWocbitH6bRIrmLQ==}
+  /isomorphic-git@1.25.7:
+    resolution: {integrity: sha512-KE10ejaIsEpQ+I/apS33qqTjyzCXgOniEaL32DwNbXtboKG8H3cu+RiBcdp3G9w4MpOOTQfGPsWp4i8UxRfDLg==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
@@ -4761,7 +4761,7 @@ packages:
       svelte: 4.2.12
     dev: false
 
-  /svelte2tsx@0.6.27(svelte@4.2.12)(typescript@5.4.3):
+  /svelte2tsx@0.6.27(svelte@4.2.12)(typescript@5.4.4):
     resolution: {integrity: sha512-E1uPW1o6VsbRz+nUk3fznZ2lSmCITAJoNu8AYefWSvIwE2pSB01i5sId4RMbWNzfcwCQl1DcgGShCPcldl4rvg==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
@@ -4770,7 +4770,7 @@ packages:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 4.2.12
-      typescript: 5.4.3
+      typescript: 5.4.4
     dev: false
 
   /svelte@4.2.12:
@@ -4825,7 +4825,7 @@ packages:
       tar-stream: 3.1.7
     optionalDependencies:
       bare-fs: 2.2.3
-      bare-path: 2.1.0
+      bare-path: 2.1.1
     optional: true
 
   /tar-stream@2.2.0:
@@ -4892,7 +4892,7 @@ packages:
   /trough@2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
 
-  /tsconfck@3.0.2(typescript@5.4.3):
+  /tsconfck@3.0.2(typescript@5.4.4):
     resolution: {integrity: sha512-6lWtFjwuhS3XI4HsX4Zg0izOI3FU/AI9EGVlPEUMDIhvLPMD4wkiof0WCoDgW7qY+Dy198g4d9miAqUHWHFH6Q==}
     engines: {node: ^18 || >=20}
     hasBin: true
@@ -4902,7 +4902,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 5.4.3
+      typescript: 5.4.4
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
@@ -4924,7 +4924,7 @@ packages:
     peerDependencies:
       typedoc: ^0.25.4
     dependencies:
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
       typescript: 5.4.3
     dev: false
     optional: true
@@ -4935,7 +4935,7 @@ packages:
     peerDependencies:
       typedoc: '>= 0.23.14 || 0.24.x || 0.25.x'
     dependencies:
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
     dev: false
     optional: true
 
@@ -4945,7 +4945,7 @@ packages:
     peerDependencies:
       typedoc: 0.24.x || 0.25.x
     dependencies:
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
     dev: false
     optional: true
 
@@ -4962,7 +4962,7 @@ packages:
       typedoc: 0.22.x || 0.23.x || 0.24.x || 0.25.x
     dependencies:
       camelcase: 8.0.0
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
     dev: false
     optional: true
 
@@ -4972,11 +4972,11 @@ packages:
     peerDependencies:
       typedoc: 0.23.x || 0.24.x || 0.25.x
     dependencies:
-      typedoc: 0.25.12(typescript@5.4.3)
+      typedoc: 0.25.12(typescript@5.4.4)
     dev: false
     optional: true
 
-  /typedoc@0.25.12(typescript@5.4.3):
+  /typedoc@0.25.12(typescript@5.4.4):
     resolution: {integrity: sha512-F+qhkK2VoTweDXd1c42GS/By2DvI2uDF4/EpG424dTexSHdtCH52C6IcAvMA6jR3DzAWZjHpUOW+E02kyPNUNw==}
     engines: {node: '>= 16'}
     hasBin: true
@@ -4988,12 +4988,20 @@ packages:
       marked: 4.3.0
       minimatch: 9.0.4
       shiki: 0.14.7
-      typescript: 5.4.3
+      typescript: 5.4.4
     dev: false
     optional: true
 
   /typescript@5.4.3:
     resolution: {integrity: sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /typescript@5.4.4:
+    resolution: {integrity: sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
