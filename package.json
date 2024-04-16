@@ -23,7 +23,7 @@
     "@astrojs/sitemap": "^3.0.0",
     "@types/sanitize-html": "^2.9.0",
     "astro-imagetools": "^0.9.0",
-    "file-type": "^18.5.0",
+    "file-type": "^19.0.0",
     "find-cache-dir": "^5.0.0",
     "isomorphic-git": "^1.24.5",
     "object-hash": "^3.0.0",
