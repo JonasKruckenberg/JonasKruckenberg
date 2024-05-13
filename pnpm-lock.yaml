@@ -22,7 +22,7 @@ importers:
         version: 2.2.23(@types/node@20.12.11)(sass@1.77.1)(typescript@5.4.5)
       astro-critters:
         specifier: ^2.0.11
-        version: 2.1.6
+        version: 2.1.7
       svelte:
         specifier: ^4.2.0
         version: 4.2.16
@@ -1331,9 +1331,6 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.11.30':
-    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
-
   '@types/node@20.12.11':
     resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
 
@@ -1414,9 +1411,8 @@ packages:
   astro-compress@2.2.23:
     resolution: {integrity: sha512-ktXcDxLThacDW+nlc+66XBrwkz9sM71vPtSgT++nvxVEQqQ2YMWX7akQcKQzI/HChtjRzU04MpxpVj8TVxQPWQ==}
 
-  astro-critters@2.1.6:
-    resolution: {integrity: sha512-LwTTXeAsmbJXsotQQyimFiswhQKuV+qSNesHjv/AqMQAcHw9F/6ysGfyK0NnDAsEFPvFYENx3/pzgG2plBZPtw==}
-    deprecated: astro-critters has been deprecated, use @playform/inline
+  astro-critters@2.1.7:
+    resolution: {integrity: sha512-I1rnyofI+fSwScFihg1Gny4NP3rTtXc46qTAMo3KlepIsV4pEeDD37YcMvA3aZxUxe0YImljjBLlyIklLRzuxg==}
 
   astro-imagetools@0.9.0:
     resolution: {integrity: sha512-iZCSiUbFr0h8HSyX2Fl/hzc3RlmVjNstWwsZZSyQKW9vRmMny/bd3qL3p8wuC6ISsAvtHfVnJLmorhhRhwVOcw==}
@@ -1910,10 +1906,6 @@ packages:
   file-type@9.0.0:
     resolution: {integrity: sha512-Qe/5NJrgIOlwijpq3B7BEpzPFcgzggOTagZmkXQY4LA6bsXKTUstK7Wp12lEJ/mLKTpvIZxmIuRcLYWT6ov9lw==}
     engines: {node: '>=6'}
-
-  files-pipe@2.1.15:
-    resolution: {integrity: sha512-HYPXV6nh/H3U0WUDErZMVUoUJh15XDe5/rFwHWZXU5wIyCbCkA7UAuhLySs7sua3MRuwILuwZLDnQtXhaibNeg==}
-    deprecated: files-pipe has been deprecated, use @playform/pipe
 
   fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
@@ -4798,10 +4790,6 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.11.30':
-    dependencies:
-      undici-types: 5.26.5
-
   '@types/node@20.12.11':
     dependencies:
       undici-types: 5.26.5
@@ -4889,10 +4877,10 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-critters@2.1.6:
+  astro-critters@2.1.7:
     dependencies:
+      '@playform/pipe': 0.0.3
       critters: 0.0.22
-      files-pipe: 2.1.15
 
   astro-imagetools@0.9.0(astro@3.6.5(@types/node@20.12.11)(lightningcss@1.24.1)(sass@1.77.1)(terser@5.31.0)(typescript@5.4.5)):
     dependencies:
@@ -5587,12 +5575,6 @@ snapshots:
       token-types: 5.0.1
 
   file-type@9.0.0: {}
-
-  files-pipe@2.1.15:
-    dependencies:
-      '@types/node': 20.11.30
-      deepmerge-ts: 5.1.0
-      fast-glob: 3.3.2
 
   fill-range@7.0.1:
     dependencies:
