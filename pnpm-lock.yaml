@@ -22,7 +22,7 @@ importers:
         version: 2.2.26(@types/node@20.12.12)(sass@1.77.2)(typescript@5.4.5)
       astro-critters:
         specifier: ^2.0.11
-        version: 2.1.8(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))
+        version: 2.1.9(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)
       svelte:
         specifier: ^4.2.0
         version: 4.2.17
@@ -240,10 +240,6 @@ packages:
     resolution: {integrity: sha512-AsUnxuLhRYsisFiaJwvp1QF+I3KjD5FOxut14q/GzovUe6orHLesW2C7d754kRm53h5gqrz6sFl6sxc4BVtE/g==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/helper-split-export-declaration@7.24.5':
-    resolution: {integrity: sha512-5CHncttXohrHk8GWOFCcCl4oRD9fKosWlIRgWm4ql9VYioKm52Mk2xsmoohvm7f3JoiLSM5ZgJuRaf5QZZYd3Q==}
-    engines: {node: '>=6.9.0'}
-
   '@babel/helper-split-export-declaration@7.24.6':
     resolution: {integrity: sha512-CvLSkwXGWnYlF9+J3iZUvwgAxKiYzK3BWuo+mLzD/MDGOZDj7Gq8+hqaOkMxmJwmlv0iu86uH5fdADd9Hxkymw==}
     engines: {node: '>=6.9.0'}
@@ -258,10 +254,6 @@ packages:
 
   '@babel/helper-validator-identifier@7.22.20':
     resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helper-validator-identifier@7.24.5':
-    resolution: {integrity: sha512-3q93SSKX2TWCG30M2G2kwaKeTYgEUp5Snjuj8qm729SObL6nbtUldAi37qbxkD5gg3xnBio+f9nqpSepGZMvxA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.24.6':
@@ -340,10 +332,6 @@ packages:
 
   '@babel/traverse@7.24.0':
     resolution: {integrity: sha512-HfuJlI8qq3dEDmNU5ChzzpZRWq+oxCZQyMzIMEqLho+AQnhMnKQUzH6ydo3RBl/YjPCuk68Y6s0Gx0AeyULiWw==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/traverse@7.24.5':
-    resolution: {integrity: sha512-7aaBLeDQ4zYcUFDUD41lJc1fG8+5IU9DaNSJAgal866FGvmD5EbWQgnEC6kO1gGLsX0esNkfnJSndbTXA3r7UA==}
     engines: {node: '>=6.9.0'}
 
   '@babel/traverse@7.24.6':
@@ -1494,16 +1482,8 @@ packages:
   astro-compress@2.2.26:
     resolution: {integrity: sha512-nVQ8g+RO2kcJzy5yUg2WcgMfYQUb5G929VMltnPH9mwuv7glavcmi07/hZzLVXLxr0drZWP9uc+O/T9J4eIZSA==}
 
-  astro-critters@2.1.8:
-    resolution: {integrity: sha512-3Kv9PUlrwO53C0VsSvRMYN6t4YsrEuOiPKlp+6YPU0gPaz+HCQ6fJ8wUiojbvbjVa9LsAzLRPQmTE8dXKPkNLA==}
-    peerDependencies:
-      '@playform/build': 0.0.9
-      astro: 4.9.1
-    peerDependenciesMeta:
-      '@playform/build':
-        optional: true
-      astro:
-        optional: true
+  astro-critters@2.1.9:
+    resolution: {integrity: sha512-p9KWYOSna2gphyM+K9HsHn73q7hEjiZZVubAW55vH3GT3FVdATLIgIrJslMKWsM4P2Hki9nSrKD001KcuJXZyw==}
 
   astro-imagetools@0.9.0:
     resolution: {integrity: sha512-iZCSiUbFr0h8HSyX2Fl/hzc3RlmVjNstWwsZZSyQKW9vRmMny/bd3qL3p8wuC6ISsAvtHfVnJLmorhhRhwVOcw==}
@@ -1844,10 +1824,6 @@ packages:
 
   diff3@0.0.3:
     resolution: {integrity: sha512-iSq8ngPOt0K53A6eVr4d5Kn6GNrM2nQZtC740pzIriHtn4pOQ2lyzEXQMBeVcWERN0ye7fhBsk9PbLLQOnUx/g==}
-
-  diff@5.1.0:
-    resolution: {integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==}
-    engines: {node: '>=0.3.1'}
 
   diff@5.2.0:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
@@ -4002,10 +3978,6 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.0
 
-  '@babel/helper-split-export-declaration@7.24.5':
-    dependencies:
-      '@babel/types': 7.24.6
-
   '@babel/helper-split-export-declaration@7.24.6':
     dependencies:
       '@babel/types': 7.24.6
@@ -4016,8 +3988,6 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.22.20': {}
 
-  '@babel/helper-validator-identifier@7.24.5': {}
-
   '@babel/helper-validator-identifier@7.24.6': {}
 
   '@babel/helper-validator-option@7.23.5': {}
@@ -4027,7 +3997,7 @@ snapshots:
   '@babel/helpers@7.24.4':
     dependencies:
       '@babel/template': 7.24.0
-      '@babel/traverse': 7.24.5
+      '@babel/traverse': 7.24.6
       '@babel/types': 7.24.0
     transitivePeerDependencies:
       - supports-color
@@ -4039,7 +4009,7 @@ snapshots:
 
   '@babel/highlight@7.24.2':
     dependencies:
-      '@babel/helper-validator-identifier': 7.24.5
+      '@babel/helper-validator-identifier': 7.24.6
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.0.1
@@ -4113,21 +4083,6 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.22.6
       '@babel/parser': 7.24.0
       '@babel/types': 7.24.0
-      debug: 4.3.4
-      globals: 11.12.0
-    transitivePeerDependencies:
-      - supports-color
-
-  '@babel/traverse@7.24.5':
-    dependencies:
-      '@babel/code-frame': 7.24.2
-      '@babel/generator': 7.24.6
-      '@babel/helper-environment-visitor': 7.22.20
-      '@babel/helper-function-name': 7.23.0
-      '@babel/helper-hoist-variables': 7.22.5
-      '@babel/helper-split-export-declaration': 7.24.5
-      '@babel/parser': 7.24.6
-      '@babel/types': 7.24.6
       debug: 4.3.4
       globals: 11.12.0
     transitivePeerDependencies:
@@ -5050,14 +5005,23 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-critters@2.1.8(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)):
+  astro-critters@2.1.9(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5):
     dependencies:
       '@playform/pipe': 0.0.5
+      astro: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)
       critters: 0.0.22
-    optionalDependencies:
-      astro: 3.6.5(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)
     transitivePeerDependencies:
+      - '@playform/build'
       - '@playform/document'
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
 
   astro-imagetools@0.9.0(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.1)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)):
     dependencies:
@@ -5523,8 +5487,6 @@ snapshots:
       dequal: 2.0.3
 
   diff3@0.0.3: {}
-
-  diff@5.1.0: {}
 
   diff@5.2.0: {}
 
@@ -8000,7 +7962,7 @@ snapshots:
   uvu@0.5.6:
     dependencies:
       dequal: 2.0.3
-      diff: 5.1.0
+      diff: 5.2.0
       kleur: 4.1.5
       sade: 1.8.1
 
