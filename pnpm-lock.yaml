@@ -22,7 +22,7 @@ importers:
         version: 2.2.25(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.0)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))
       astro-critters:
         specifier: ^2.0.11
-        version: 2.1.7
+        version: 2.1.8(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.0)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5))
       svelte:
         specifier: ^4.2.0
         version: 4.2.17
@@ -846,9 +846,6 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@playform/pipe@0.0.3':
-    resolution: {integrity: sha512-PMuG113yN2AYYBZhDS640lIVHPIYm62o4/X/+kE7Z5T78YySHdg3fQ8iUwKsqmGHOGxSs5J21X/T6xIV5Zwz0g==}
-
   '@playform/pipe@0.0.5':
     resolution: {integrity: sha512-lUQTs5duOtnBvpfFzoiIUuZt6148PcEYv3pESm7kTaVaFAb2shhYLdueYcy4Jr1F6gCFsCv6jUvAwDD1f8f5ZQ==}
     peerDependencies:
@@ -945,9 +942,6 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/node@20.12.11':
-    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
-
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
 
@@ -1036,8 +1030,16 @@ packages:
       astro:
         optional: true
 
-  astro-critters@2.1.7:
-    resolution: {integrity: sha512-I1rnyofI+fSwScFihg1Gny4NP3rTtXc46qTAMo3KlepIsV4pEeDD37YcMvA3aZxUxe0YImljjBLlyIklLRzuxg==}
+  astro-critters@2.1.8:
+    resolution: {integrity: sha512-3Kv9PUlrwO53C0VsSvRMYN6t4YsrEuOiPKlp+6YPU0gPaz+HCQ6fJ8wUiojbvbjVa9LsAzLRPQmTE8dXKPkNLA==}
+    peerDependencies:
+      '@playform/build': 0.0.9
+      astro: 4.9.1
+    peerDependenciesMeta:
+      '@playform/build':
+        optional: true
+      astro:
+        optional: true
 
   astro-imagetools@0.9.0:
     resolution: {integrity: sha512-iZCSiUbFr0h8HSyX2Fl/hzc3RlmVjNstWwsZZSyQKW9vRmMny/bd3qL3p8wuC6ISsAvtHfVnJLmorhhRhwVOcw==}
@@ -1313,10 +1315,6 @@ packages:
   deep-extend@0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
-
-  deepmerge-ts@5.1.0:
-    resolution: {integrity: sha512-eS8dRJOckyo9maw9Tu5O5RUi/4inFLrnoLkBe3cPfDMx3WZioXtmOew4TXQaxq7Rhl4xjDtR7c6x8nNTxOvbFw==}
-    engines: {node: '>=16.0.0'}
 
   deepmerge-ts@7.0.1:
     resolution: {integrity: sha512-Qbiitd155MxdVp/ww9M6eeRPPMiWOugA34ptYOBQzOcFlPYl6JcWZLho6WvLmPDuxHLyLymhIN3YxrBleqZX9g==}
@@ -3732,12 +3730,6 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@playform/pipe@0.0.3':
-    dependencies:
-      '@types/node': 20.12.11
-      deepmerge-ts: 5.1.0
-      fast-glob: 3.3.2
-
   '@playform/pipe@0.0.5':
     dependencies:
       '@types/node': 20.12.12
@@ -3844,10 +3836,6 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/node@20.12.11':
-    dependencies:
-      undici-types: 5.26.5
-
   '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
@@ -3930,10 +3918,14 @@ snapshots:
     transitivePeerDependencies:
       - '@playform/document'
 
-  astro-critters@2.1.7:
+  astro-critters@2.1.8(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.0)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)):
     dependencies:
-      '@playform/pipe': 0.0.3
+      '@playform/pipe': 0.0.5
       critters: 0.0.22
+    optionalDependencies:
+      astro: 3.6.5(@types/node@20.12.12)(lightningcss@1.25.0)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)
+    transitivePeerDependencies:
+      - '@playform/document'
 
   astro-imagetools@0.9.0(astro@3.6.5(@types/node@20.12.12)(lightningcss@1.25.0)(sass@1.77.2)(terser@5.31.0)(typescript@5.4.5)):
     dependencies:
@@ -4285,8 +4277,6 @@ snapshots:
 
   deep-extend@0.6.0:
     optional: true
-
-  deepmerge-ts@5.1.0: {}
 
   deepmerge-ts@7.0.1: {}
 
