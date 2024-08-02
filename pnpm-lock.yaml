@@ -19,7 +19,7 @@ importers:
         version: 3.6.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
       astro-compress:
         specifier: ^2.0.15
-        version: 2.3.0(@types/node@20.14.12)(sass@1.77.8)(typescript@5.4.5)
+        version: 2.3.1(@types/node@20.14.12)(sass@1.77.8)(typescript@5.4.5)
       astro-critters:
         specifier: ^2.0.11
         version: 2.2.0(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
@@ -1036,8 +1036,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro-compress@2.3.0:
-    resolution: {integrity: sha512-7JkIgQyngmWnRnjVkOcPHelVIi9/4RXGAy68wmsIBREpfKsBCAIVnyF9riBaahkL6rqiGEecyFDUBk6aW9qIew==}
+  astro-compress@2.3.1:
+    resolution: {integrity: sha512-W2rv6Vr8dZEw2CEA0/QcBEFmXCERbY8onlyixfRul1nY5moPNkk3zdiw7Id3TkIJyHpqQTP6OyfTmTp6MhOqjw==}
 
   astro-critters@2.2.0:
     resolution: {integrity: sha512-Ieuu4uR8nas2KT3RogITH41BCdEr3Ro8712S4Lm5xnaI1iEGZA+ajqpj2jgll6HjWm1LzlehRWH1ituUn4X/Cg==}
@@ -3931,13 +3931,14 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro-compress@2.3.0(@types/node@20.14.12)(sass@1.77.8)(typescript@5.4.5):
+  astro-compress@2.3.1(@types/node@20.14.12)(sass@1.77.8)(typescript@5.4.5):
     dependencies:
       '@playform/pipe': 0.1.0
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       astro: 3.6.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
       csso: 5.0.5
+      deepmerge-ts: 7.1.0
       html-minifier-terser: 7.2.0
       kleur: 4.1.5
       lightningcss: 1.25.1
