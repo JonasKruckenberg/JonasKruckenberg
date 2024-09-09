@@ -12,8 +12,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.4(astro@3.6.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))(svelte@4.2.19)(typescript@5.4.5)(vite@4.5.2(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))
       '@giscus/svelte':
-        specifier: ^2.3.0
-        version: 2.4.0(svelte@4.2.19)
+        specifier: ^3.0.0
+        version: 3.0.0(svelte@4.2.19)
       astro:
         specifier: ^3.0.8
         version: 3.6.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
@@ -40,14 +40,14 @@ importers:
         specifier: ^0.9.0
         version: 0.9.0(astro@3.6.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))
       file-type:
-        specifier: ^18.5.0
-        version: 18.7.0
+        specifier: ^19.0.0
+        version: 19.0.0
       find-cache-dir:
         specifier: ^5.0.0
         version: 5.0.0
       isomorphic-git:
         specifier: ^1.24.5
-        version: 1.27.0
+        version: 1.27.1
       object-hash:
         specifier: ^3.0.0
         version: 3.0.0
@@ -548,8 +548,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@giscus/svelte@2.4.0':
-    resolution: {integrity: sha512-ykB/cb0hdSfkwM3vlcD0MitVNeTVMWAMdNAtzlVHu/WiTFUJ4QpBXzHmf3ROk7tf35KIGER3SWDPGDWSgJHcBQ==}
+  '@giscus/svelte@3.0.0':
+    resolution: {integrity: sha512-FAs0DgfFkq2JOcbkEyJ3eO8tCxcxNVO22esxyoLdcTcwe9Ju1J8Hk7PKaIf29zd/woCp3LJb3AbSkOWoHiGpQw==}
     peerDependencies:
       svelte: ^3 || ^4
 
@@ -1584,9 +1584,9 @@ packages:
     resolution: {integrity: sha512-heRUMZHby2Qj6wZAA3YHeMlRmZNQTcb6VxctkGmM+mcM6ROQKvHpr7SS6EgdfEhH+s25LDshBjvPx/Ecm+bOVQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  file-type@18.7.0:
-    resolution: {integrity: sha512-ihHtXRzXEziMrQ56VSgU7wkxh55iNchFkosu7Y9/S+tXHdKyrGjVK0ujbqNnsxzea+78MaLhN6PGmfYSAv1ACw==}
-    engines: {node: '>=14.16'}
+  file-type@19.0.0:
+    resolution: {integrity: sha512-s7cxa7/leUWLiXO78DVVfBVse+milos9FitauDLG1pI7lNaJ2+5lzPnr2N24ym+84HVwJL6hVuGfgVE+ALvU8Q==}
+    engines: {node: '>=18'}
 
   file-type@9.0.0:
     resolution: {integrity: sha512-Qe/5NJrgIOlwijpq3B7BEpzPFcgzggOTagZmkXQY4LA6bsXKTUstK7Wp12lEJ/mLKTpvIZxmIuRcLYWT6ov9lw==}
@@ -1868,8 +1868,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  isomorphic-git@1.27.0:
-    resolution: {integrity: sha512-KYhBq8+yWYZsGl/SMfMSESZ5C+P2Sj4O3I4URg3zjqt14ilg8yLUlGg2wAdC45cOer7pybwwfRGLKpAJzjfzYQ==}
+  isomorphic-git@1.27.1:
+    resolution: {integrity: sha512-X32ph5zIWfT75QAqW2l3JCIqnx9/GWd17bRRehmn3qmWc34OYbSXY6Cxv0o9bIIY+CWugoN4nQFHNA+2uYf2nA==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -3509,7 +3509,7 @@ snapshots:
   '@esbuild/win32-x64@0.19.12':
     optional: true
 
-  '@giscus/svelte@2.4.0(svelte@4.2.19)':
+  '@giscus/svelte@3.0.0(svelte@4.2.19)':
     dependencies:
       giscus: 1.5.0
       svelte: 4.2.19
@@ -4689,7 +4689,7 @@ snapshots:
       strtok3: 7.0.0
       token-types: 5.0.1
 
-  file-type@18.7.0:
+  file-type@19.0.0:
     dependencies:
       readable-web-to-node-stream: 3.0.2
       strtok3: 7.0.0
@@ -5052,7 +5052,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  isomorphic-git@1.27.0:
+  isomorphic-git@1.27.1:
     dependencies:
       async-lock: 1.4.1
       clean-git-ref: 2.0.1
