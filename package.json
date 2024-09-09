@@ -11,28 +11,28 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^5.0.0",
-    "@giscus/svelte": "^2.3.0",
+    "@astrojs/svelte": "^5.7.0",
+    "@giscus/svelte": "^3.0.0",
     "astro": "^4.15.4",
-    "astro-compress": "^2.0.15",
-    "astro-critters": "^2.0.11",
-    "svelte": "^4.2.0"
+    "astro-compress": "^2.3.1",
+    "astro-critters": "^2.2.0",
+    "svelte": "^4.2.19"
   },
   "devDependencies": {
-    "@astrojs/rss": "^4.0.0",
-    "@astrojs/sitemap": "^3.0.0",
-    "@types/sanitize-html": "^2.9.0",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@types/sanitize-html": "^2.13.0",
     "astro-imagetools": "^0.9.0",
-    "file-type": "^18.5.0",
+    "file-type": "^19.5.0",
     "find-cache-dir": "^5.0.0",
-    "isomorphic-git": "^1.24.5",
+    "isomorphic-git": "^1.27.1",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
     "rehype-katex": "^6.0.3",
     "remark-math": "^5.1.1",
-    "sanitize-html": "^2.11.0",
-    "sass": "^1.66.1",
-    "sharp": "^0.33.0"
+    "sanitize-html": "^2.13.0",
+    "sass": "^1.78.0",
+    "sharp": "^0.33.5"
   },
   "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
 }
