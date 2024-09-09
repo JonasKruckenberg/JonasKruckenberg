@@ -1,3 +1,4 @@
 # Hi there 👋
 
-I work on pushing the limits of small and secure app @tauri-apps, Local First Software and peer-to-peer networking.
+I'm Jonas, open-sourcerer and builderer of things. I'm currently building the [next generation Operating System](https://github.com/JonasKruckenberg/k23).
+Previous work you might know: [Tauri](https://tauri.app), [vite-imagetools](https://github.com/JonasKruckenberg/imagetools).
