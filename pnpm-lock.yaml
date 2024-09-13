@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@astrojs/svelte':
         specifier: ^5.7.0
-        version: 5.7.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))(svelte@4.2.19)(typescript@5.4.5)(vite@5.4.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))
+        version: 5.7.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))(svelte@4.2.19)(typescript@5.4.5)(vite@5.4.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))
       '@giscus/svelte':
         specifier: ^3.0.0
         version: 3.0.0(svelte@4.2.19)
       astro:
         specifier: ^4.15.4
-        version: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
+        version: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
       astro-compress:
         specifier: ^2.3.1
         version: 2.3.1(@types/node@20.14.12)(rollup@4.21.3)(sass@1.78.0)(typescript@5.4.5)
@@ -38,7 +38,7 @@ importers:
         version: 2.13.0
       astro-imagetools:
         specifier: ^0.9.0
-        version: 0.9.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))
+        version: 0.9.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))
       file-type:
         specifier: ^19.5.0
         version: 19.5.0
@@ -1039,8 +1039,8 @@ packages:
     peerDependencies:
       astro: '>=0.26 || >=1.0.0-beta'
 
-  astro@4.15.5:
-    resolution: {integrity: sha512-zcHXpRav0dtYpddxoGMDN7A7SKrGL9wsu5IxLjqCcZhylfZ/5mfLfoGYnSg7aFwuAleUXP66lyfY+GDbFTbF2w==}
+  astro@4.15.6:
+    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2152,6 +2152,9 @@ packages:
     resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  path-to-regexp@6.2.2:
+    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
+
   peek-readable@5.2.0:
     resolution: {integrity: sha512-U94a+eXHzct7vAd19GH3UQ2dH4Satbng0MyYTMaQatL0pvYYL5CTPR25HBhKtecl+4bfu1/i3vC6k0hydO5Vcw==}
     engines: {node: '>=14.16'}
@@ -2787,10 +2790,10 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/svelte@5.7.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))(svelte@4.2.19)(typescript@5.4.5)(vite@5.4.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))':
+  '@astrojs/svelte@5.7.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5))(svelte@4.2.19)(typescript@5.4.5)(vite@5.4.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.2(svelte@4.2.19)(vite@5.4.5(@types/node@20.14.12)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.31.3))
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
       svelte: 4.2.19
       svelte2tsx: 0.7.18(svelte@4.2.19)(typescript@5.4.5)
       typescript: 5.4.5
@@ -3708,7 +3711,7 @@ snapshots:
       '@playform/pipe': 0.1.0
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
       csso: 5.0.5
       deepmerge-ts: 7.1.0
       html-minifier-terser: 7.2.0
@@ -3731,7 +3734,7 @@ snapshots:
   astro-critters@2.2.0(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5):
     dependencies:
       '@playform/pipe': 0.1.0
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
       critters: 0.0.24
     transitivePeerDependencies:
       - '@types/node'
@@ -3746,10 +3749,10 @@ snapshots:
       - terser
       - typescript
 
-  astro-imagetools@0.9.0(astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)):
+  astro-imagetools@0.9.0(astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)):
     dependencies:
       '@astropub/codecs': 0.4.4
-      astro: 4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
+      astro: 4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5)
       file-type: 17.1.1
       find-cache-dir: 3.3.2
       find-up: 6.3.0
@@ -3760,7 +3763,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  astro@4.15.5(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5):
+  astro@4.15.6(@types/node@20.14.12)(lightningcss@1.25.1)(rollup@4.21.3)(sass@1.78.0)(terser@5.31.3)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3808,6 +3811,7 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
+      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -5177,6 +5181,8 @@ snapshots:
   path-exists@4.0.0: {}
 
   path-exists@5.0.0: {}
+
+  path-to-regexp@6.2.2: {}
 
   peek-readable@5.2.0: {}
 
