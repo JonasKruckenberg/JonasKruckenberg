@@ -28,8 +28,8 @@
     "isomorphic-git": "^1.27.1",
     "object-hash": "^3.0.0",
     "potrace": "^2.1.8",
-    "rehype-katex": "^6.0.3",
-    "remark-math": "^5.1.1",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
     "sanitize-html": "^2.13.0",
     "sass": "^1.78.0",
     "sharp": "^0.33.5"
