@@ -13,7 +13,7 @@ importers:
         version: 5.7.3(astro@4.16.18(@types/node@22.5.0)(lightningcss@1.27.0)(rollup@4.28.1)(sass@1.83.0)(terser@5.36.0)(typescript@5.4.5))(svelte@5.16.0)(typescript@5.4.5)(vite@5.4.11(@types/node@22.5.0)(lightningcss@1.27.0)(sass@1.83.0)(terser@5.36.0))
       '@giscus/svelte':
         specifier: ^3.0.0
-        version: 3.0.0(svelte@5.16.0)
+        version: 3.1.0(svelte@5.16.0)
       astro:
         specifier: ^4.15.4
         version: 4.16.18(@types/node@22.5.0)(lightningcss@1.27.0)(rollup@4.28.1)(sass@1.83.0)(terser@5.36.0)(typescript@5.4.5)
@@ -338,10 +338,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@giscus/svelte@3.0.0':
-    resolution: {integrity: sha512-FAs0DgfFkq2JOcbkEyJ3eO8tCxcxNVO22esxyoLdcTcwe9Ju1J8Hk7PKaIf29zd/woCp3LJb3AbSkOWoHiGpQw==}
+  '@giscus/svelte@3.1.0':
+    resolution: {integrity: sha512-87AhkRvT5mUzGFbbv5RX1+DiC8RsRVZPzyGDNyshNUlezlTjnLB7cXf7ySqEKu6KlRTP41c1XGUufoKhoaQjqg==}
     peerDependencies:
-      svelte: ^3 || ^4
+      svelte: ^3 || ^4 || ^5
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1483,8 +1483,8 @@ packages:
   gifwrap@0.9.4:
     resolution: {integrity: sha512-MDMwbhASQuVeD4JKd1fKgNgCRL3fGqMM4WaqpNhWO0JiMOAjbQdumbs4BbBZEy9/M00EHEjKN3HieVhCUlwjeQ==}
 
-  giscus@1.5.0:
-    resolution: {integrity: sha512-t3LL0qbSO3JXq3uyQeKpF5CegstGfKX/0gI6eDe1cmnI7D56R7j52yLdzw4pdKrg3VnufwCgCM3FDz7G1Qr6lg==}
+  giscus@1.6.0:
+    resolution: {integrity: sha512-Zrsi8r4t1LVW950keaWcsURuZUQwUaMKjvJgTCY125vkW6OiEBkatE7ScJDbpqKHdZwb///7FVC21SE3iFK3PQ==}
 
   github-from-package@0.0.0:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
@@ -1781,14 +1781,14 @@ packages:
     resolution: {integrity: sha512-8f7aNmS1+etYSLHht0fQApPc2kNO8qGRutifN5rVIc6Xo6ABsEbqOr758UwI7ALVbTt4x1fllKt0PYgzD9S3yQ==}
     engines: {node: '>= 12.0.0'}
 
-  lit-element@4.1.0:
-    resolution: {integrity: sha512-gSejRUQJuMQjV2Z59KAS/D4iElUhwKpIyJvZ9w+DIagIQjfJnhR20h2Q5ddpzXGS+fF0tMZ/xEYGMnKmaI/iww==}
+  lit-element@4.1.1:
+    resolution: {integrity: sha512-HO9Tkkh34QkTeUmEdNYhMT8hzLid7YlMlATSi1q4q17HE5d9mrrEHJ/o8O2D0cMi182zK1F3v7x0PWFjrhXFew==}
 
-  lit-html@3.2.0:
-    resolution: {integrity: sha512-pwT/HwoxqI9FggTrYVarkBKFN9MlTUpLrDHubTmW4SrkL3kkqW5gxwbxMMUnbbRHBC0WTZnYHcjDSCM559VyfA==}
+  lit-html@3.2.1:
+    resolution: {integrity: sha512-qI/3lziaPMSKsrwlxH/xMgikhQ0EGOX2ICU73Bi/YHFvz2j/yMCIrw4+puF2IpQ4+upd3EWbvnHM9+PnJn48YA==}
 
-  lit@3.2.0:
-    resolution: {integrity: sha512-s6tI33Lf6VpDu7u4YqsSX78D28bYQulM+VAzsGch4fx2H0eLZnJsUBsPWmGYSGoKDNbjtRv02rio1o+UdPVwvw==}
+  lit@3.2.1:
+    resolution: {integrity: sha512-1BBa1E/z0O9ye5fZprPtdqnc0BFzxIxTTOO/tQFmyC/hj1O3jL4TfmLBw0WEwjAokdLwpclkvGgDJwTIh0/22w==}
 
   load-bmfont@1.4.2:
     resolution: {integrity: sha512-qElWkmjW9Oq1F9EI5Gt7aD9zcdHb9spJCW1L/dmPf7KzCCEJxq8nhHz5eCgI9aMf7vrG/wyaCqdsI+Iy9ZTlog==}
@@ -3089,9 +3089,9 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@giscus/svelte@3.0.0(svelte@5.16.0)':
+  '@giscus/svelte@3.1.0(svelte@5.16.0)':
     dependencies:
-      giscus: 1.5.0
+      giscus: 1.6.0
       svelte: 5.16.0
 
   '@img/sharp-darwin-arm64@0.33.5':
@@ -4327,9 +4327,9 @@ snapshots:
       image-q: 4.0.0
       omggif: 1.0.10
 
-  giscus@1.5.0:
+  giscus@1.6.0:
     dependencies:
-      lit: 3.2.0
+      lit: 3.2.1
 
   github-from-package@0.0.0:
     optional: true
@@ -4670,21 +4670,21 @@ snapshots:
       lightningcss-win32-arm64-msvc: 1.27.0
       lightningcss-win32-x64-msvc: 1.27.0
 
-  lit-element@4.1.0:
+  lit-element@4.1.1:
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.2.1
       '@lit/reactive-element': 2.0.4
-      lit-html: 3.2.0
+      lit-html: 3.2.1
 
-  lit-html@3.2.0:
+  lit-html@3.2.1:
     dependencies:
       '@types/trusted-types': 2.0.7
 
-  lit@3.2.0:
+  lit@3.2.1:
     dependencies:
       '@lit/reactive-element': 2.0.4
-      lit-element: 4.1.0
-      lit-html: 3.2.0
+      lit-element: 4.1.1
+      lit-html: 3.2.1
 
   load-bmfont@1.4.2:
     dependencies:
