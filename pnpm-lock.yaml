@@ -35,7 +35,7 @@ importers:
         version: 3.3.0
       '@types/sanitize-html':
         specifier: ^2.13.0
-        version: 2.13.0
+        version: 2.15.0
       astro-imagetools:
         specifier: ^0.9.0
         version: 0.9.0(astro@4.16.18(@types/node@22.10.5)(lightningcss@1.28.2)(rollup@4.28.1)(sass@1.86.0)(terser@5.37.0)(typescript@5.4.5))
@@ -943,8 +943,8 @@ packages:
   '@types/node@22.10.5':
     resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
 
-  '@types/sanitize-html@2.13.0':
-    resolution: {integrity: sha512-X31WxbvW9TjIhZZNyNBZ/p5ax4ti7qsNDBDEnH4zAgmEh35YnFD1UiS6z9Cd34kKm0LslFW0KPmTQzu/oGtsqQ==}
+  '@types/sanitize-html@2.15.0':
+    resolution: {integrity: sha512-71Z6PbYsVKfp4i6Jvr37s5ql6if1Q/iJQT80NbaSi7uGaG8CqBMXP0pk/EsURAOuGdk5IJCd/vnzKrR7S3Txsw==}
 
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
@@ -3694,7 +3694,7 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/sanitize-html@2.13.0':
+  '@types/sanitize-html@2.15.0':
     dependencies:
       htmlparser2: 8.0.2
 
