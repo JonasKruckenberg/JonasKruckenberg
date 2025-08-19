@@ -43,8 +43,8 @@ importers:
         specifier: ^19.5.0
         version: 19.6.0
       find-cache-dir:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^6.0.0
+        version: 6.0.0
       isomorphic-git:
         specifier: ^1.27.1
         version: 1.33.0
@@ -1596,9 +1596,10 @@ packages:
     resolution: {integrity: sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==}
     engines: {node: '>=8'}
 
-  find-cache-dir@5.0.0:
-    resolution: {integrity: sha512-OuWNfjfP05JcpAP3JPgAKUhWefjMRfI5iAoSsvE24ANYWJaepAtlSgWECSVEuRgSXpyNEc9DJwG/TZpgcOqyig==}
+  find-cache-dir@6.0.0:
+    resolution: {integrity: sha512-nZMBQ0IuwcMgW8jsiShHtj2WQS6ReVTOMGiSnriCdWBUN/eVsolBlE0EPXe2R5MfIWtqkpM4grjGuqimbWhUFA==}
     engines: {node: '>=16'}
+    deprecated: Renamed to `find-cache-directory`.
 
   find-up-simple@1.0.0:
     resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
@@ -4650,7 +4651,7 @@ snapshots:
       make-dir: 3.1.0
       pkg-dir: 4.2.0
 
-  find-cache-dir@5.0.0:
+  find-cache-dir@6.0.0:
     dependencies:
       common-path-prefix: 3.0.0
       pkg-dir: 7.0.0
